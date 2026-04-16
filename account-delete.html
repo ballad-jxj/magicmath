@@ -1,64 +1,603 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>계정 삭제 요청 - 우리 아이 맞춤 연산</title>
-    <style>
-        body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; line-height: 1.7; padding: 30px; color: #444; max-width: 800px; margin: auto; }
-        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
-        h2 { color: #2980b9; margin-top: 35px; }
-        .highlight { background-color: #fcf8e3; padding: 15px 20px; border-left: 5px solid #f1c40f; margin: 20px 0; }
-        .steps { background-color: #f0f8ff; padding: 15px 20px; border-left: 5px solid #3498db; margin: 20px 0; }
-        .steps ol { margin: 0; padding-left: 20px; }
-        .steps li { margin-bottom: 8px; }
-        .warn { background-color: #fff3f3; padding: 15px 20px; border-left: 5px solid #e74c3c; margin: 20px 0; }
-        footer { margin-top: 50px; font-size: 0.9em; color: #888; text-align: center; }
-        a { color: #2980b9; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Deletion — My Kid's Custom Math</title>
+  <style>
+    :root { --primary:#3498db; --primary-dark:#2980b9; --accent:#f1c40f; --danger:#e74c3c; --border:#e5e7eb; --text:#1a1a2e; --muted:#888; }
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Segoe UI', Roboto, sans-serif; line-height: 1.75; padding: 24px 20px 64px; color:#444; max-width: 860px; margin: auto; }
+    h1 { color: #2c3e50; border-bottom: 2px solid var(--primary); padding-bottom: 10px; }
+    h2 { color: var(--primary-dark); margin-top: 32px; font-size: 18px; }
+    .highlight { background-color:#fcf8e3; padding:14px 18px; border-left: 5px solid var(--accent); margin: 18px 0; }
+    .steps { background-color:#f0f8ff; padding:14px 18px; border-left: 5px solid var(--primary); margin: 18px 0; }
+    .steps ol { margin:0; padding-left:20px; }
+    .steps li { margin-bottom: 6px; }
+    .warn { background-color:#fff3f3; padding:14px 18px; border-left: 5px solid var(--danger); margin: 18px 0; }
+    footer { margin-top: 48px; font-size:13px; color: var(--muted); text-align:center; border-top:1px solid var(--border); padding-top:14px; }
+    a { color: var(--primary-dark); }
+    .lang-bar { display:flex; justify-content:flex-end; align-items:center; gap:8px; margin-bottom:8px; font-size:13px; color: var(--muted); }
+    .lang-bar select { padding:6px 10px; border-radius:6px; border:1px solid var(--border); background:#fff; font-size:13px; }
+    ul { padding-left: 22px; }
+    code { background:#f6f7f9; padding: 1px 6px; border-radius:4px; font-size: 13px; }
+  </style>
 </head>
 <body>
-    <h1>계정 삭제 요청</h1>
-    <p><strong>우리 아이 맞춤 연산</strong> 앱의 계정 삭제를 원하시는 경우, 아래 안내에 따라 요청해 주세요.</p>
 
-    <div class="highlight">
-        <strong>앱 정보:</strong> 우리 아이 맞춤 연산<br>
-        <strong>개발자 이메일:</strong> <a href="mailto:alsntud1004@gmail.com">alsntud1004@gmail.com</a>
-    </div>
+<div class="lang-bar">
+  <span data-i18n="labels.lang">Language</span>
+  <select id="langSel" aria-label="Language">
+    <option value="en">English</option>
+    <option value="ko">한국어</option>
+    <option value="ja">日本語</option>
+    <option value="zh_cn">简体中文</option>
+    <option value="zh_tw">繁體中文</option>
+    <option value="es">Español</option>
+    <option value="pt">Português</option>
+    <option value="fr">Français</option>
+    <option value="de">Deutsch</option>
+    <option value="ru">Русский</option>
+    <option value="th">ภาษาไทย</option>
+    <option value="id">Bahasa Indonesia</option>
+    <option value="vi">Tiếng Việt</option>
+  </select>
+</div>
 
-    <h2>계정 삭제 방법</h2>
-    <div class="steps">
-        <ol>
-            <li>아래 개발자 이메일로 계정 삭제 요청 이메일을 보내주세요.</li>
-            <li>이메일 제목: <strong>[계정 삭제 요청] 우리 아이 맞춤 연산</strong></li>
-            <li>이메일 본문에 가입 시 사용한 <strong>이메일 주소 또는 소셜 계정(Google/카카오) 정보</strong>를 기재해 주세요.</li>
-            <li>요청 접수 후 <strong>영업일 기준 3일 이내</strong>에 계정 및 관련 데이터를 삭제 처리해 드립니다.</li>
-        </ol>
-    </div>
+<h1 data-i18n="title">Account Deletion</h1>
+<p data-i18n="intro"></p>
 
-    <p><strong>📧 계정 삭제 요청 이메일:</strong> <a href="mailto:alsntud1004@gmail.com">alsntud1004@gmail.com</a></p>
+<div class="highlight">
+  <strong data-i18n="labels.app">App:</strong> <span data-i18n="values.appName">My Kid's Custom Math</span><br>
+  <strong data-i18n="labels.email">Developer email:</strong>
+  <a href="mailto:alsntud1004@gmail.com">alsntud1004@gmail.com</a>
+</div>
 
-    <h2>삭제되는 데이터</h2>
-    <p>계정 삭제 시 아래 데이터가 모두 삭제됩니다.</p>
-    <ul>
-        <li>계정 정보 (이름, 이메일, 로그인 정보)</li>
-        <li>가족 정보 및 자녀 프로필</li>
-        <li>생성된 문제지 및 풀이 기록</li>
-        <li>구독 및 결제 이력</li>
-        <li>학습 분석 데이터</li>
-    </ul>
+<h2 data-i18n="inapp.h">Option A — Delete in the app (recommended)</h2>
+<div class="steps">
+  <ol>
+    <li data-i18n="inapp.s1"></li>
+    <li data-i18n="inapp.s2"></li>
+    <li data-i18n="inapp.s3"></li>
+  </ol>
+</div>
 
-    <div class="warn">
-        <strong>⚠️ 주의:</strong> 계정 삭제 후에는 데이터를 복구할 수 없습니다. 삭제 전에 필요한 정보를 미리 저장해 두시기 바랍니다.<br>
-        구독 중인 경우, Google Play에서 별도로 구독을 해지해야 추가 결제가 발생하지 않습니다.
-    </div>
+<h2 data-i18n="web.h">Option B — Request deletion by email</h2>
+<div class="steps">
+  <ol>
+    <li data-i18n="web.s1"></li>
+    <li data-i18n="web.s2"></li>
+    <li data-i18n="web.s3"></li>
+    <li data-i18n="web.s4"></li>
+  </ol>
+</div>
 
-    <h2>문의</h2>
-    <p>계정 삭제 외 기타 문의사항은 아래 이메일로 연락 주세요.</p>
-    <p><strong>이메일:</strong> <a href="mailto:alsntud1004@gmail.com">alsntud1004@gmail.com</a></p>
+<p><strong data-i18n="labels.requestMail">Deletion request email:</strong>
+<a href="mailto:alsntud1004@gmail.com?subject=%5BAccount%20Deletion%20Request%5D%20My%20Kid%27s%20Custom%20Math">alsntud1004@gmail.com</a></p>
 
-    <footer>
-        <p>우리 아이 맞춤 연산 © 2025. All rights reserved.</p>
-    </footer>
+<h2 data-i18n="deleted.h">What gets deleted</h2>
+<ul>
+  <li data-i18n="deleted.i1"></li>
+  <li data-i18n="deleted.i2"></li>
+  <li data-i18n="deleted.i3"></li>
+  <li data-i18n="deleted.i4"></li>
+  <li data-i18n="deleted.i5"></li>
+</ul>
+
+<h2 data-i18n="retained.h">What we keep (as required by law)</h2>
+<ul>
+  <li data-i18n="retained.i1"></li>
+  <li data-i18n="retained.i2"></li>
+</ul>
+
+<div class="warn">
+  <strong data-i18n="warn.strong">⚠️ Important:</strong> <span data-i18n="warn.body"></span>
+</div>
+
+<h2 data-i18n="contact.h">Other questions</h2>
+<p data-i18n="contact.body"></p>
+<p><strong data-i18n="labels.email">Email:</strong>
+<a href="mailto:alsntud1004@gmail.com">alsntud1004@gmail.com</a></p>
+
+<footer>
+  © 2026 My Kid's Custom Math &nbsp;|&nbsp;
+  <a href="./privacy-policy.html" data-i18n="labels.privacy">Privacy Policy</a>
+</footer>
+
+<script>
+const I18N = {
+  en: {
+    title: "Account Deletion Request",
+    labels: { lang:"Language", app:"App:", email:"Developer email:", requestMail:"Deletion request email:", privacy:"Privacy Policy" },
+    values: { appName:"My Kid's Custom Math" },
+    intro: "If you wish to delete your My Kid's Custom Math account, please follow either option below. Requests are processed within 30 days; in most cases, data is removed within 3 business days.",
+    inapp: { h:"Option A — Delete in the app (recommended)",
+      s1:"Sign in as a parent and open \"My Page\".",
+      s2:"Tap \"Delete account\" and confirm.",
+      s3:"Your account and related data will be removed immediately."
+    },
+    web: { h:"Option B — Request deletion by email",
+      s1:"Send an email to the developer address below.",
+      s2:"Subject: [Account Deletion Request] My Kid's Custom Math.",
+      s3:"In the body, include the email address used at sign-up and, if applicable, the Google / Kakao social account.",
+      s4:"We will complete deletion within 3 business days (no later than 30 days) and send a confirmation email."
+    },
+    deleted: { h:"What gets deleted",
+      i1:"Account data (email, display name, auth UID, profile photo URL)",
+      i2:"Family and child profiles (nicknames, PINs, grade, family code)",
+      i3:"Generated problem sets and submissions / grading records",
+      i4:"Weakness analyses and learning statistics",
+      i5:"Subscription status, purchase tokens, and preferred-language settings"
+    },
+    retained: { h:"What we keep (as required by law)",
+      i1:"Payment records: up to 5 years where required by tax / consumer protection law.",
+      i2:"Abuse and security logs: up to 90 days for fraud prevention and system integrity."
+    },
+    warn: { strong:"⚠️ Important:",
+      body:"Deletion is permanent and cannot be undone. Back up anything you need first. If you have an active subscription, cancel it in Google Play first to prevent further charges — deleting the account alone does not cancel the Play subscription."
+    },
+    contact: { h:"Other questions",
+      body:"For questions other than account deletion, please contact us at the email below."
+    }
+  },
+
+  ko: {
+    title: "계정 삭제 요청",
+    labels: { lang:"언어", app:"앱:", email:"개발자 이메일:", requestMail:"삭제 요청 이메일:", privacy:"개인정보처리방침" },
+    values: { appName:"우리아이맞춤연산" },
+    intro: "우리아이맞춤연산 계정 삭제를 원하시면 아래 두 가지 방법 중 하나로 요청해 주세요. 요청은 최장 30일 이내(대부분 영업일 기준 3일 이내) 처리됩니다.",
+    inapp: { h:"방법 A — 앱 내 삭제 (권장)",
+      s1:"학부모 계정으로 로그인한 뒤 '마이페이지'를 엽니다.",
+      s2:"'회원 탈퇴'를 눌러 확인합니다.",
+      s3:"계정 및 관련 데이터가 즉시 삭제됩니다."
+    },
+    web: { h:"방법 B — 이메일로 삭제 요청",
+      s1:"아래 개발자 이메일로 삭제 요청 메일을 보내주세요.",
+      s2:"제목: [계정 삭제 요청] 우리아이맞춤연산",
+      s3:"본문에 가입 시 사용한 이메일 주소와 (해당 시) Google / 카카오 소셜 계정을 기재해 주세요.",
+      s4:"영업일 기준 3일 이내(최장 30일)에 처리하고, 완료 시 확인 메일을 드립니다."
+    },
+    deleted: { h:"삭제되는 데이터",
+      i1:"계정 정보(이메일, 표시 이름, 인증 UID, 프로필 사진 URL)",
+      i2:"가족 및 자녀 프로필(닉네임, PIN, 학년, 가족코드)",
+      i3:"생성된 문제지 및 제출/채점 기록",
+      i4:"약점 분석 및 학습 통계",
+      i5:"구독 상태, 구매 토큰, 선호 언어 설정"
+    },
+    retained: { h:"법령상 보유해야 하는 데이터",
+      i1:"결제 기록: 관련 법령(전자상거래법 등)에 따라 최대 5년",
+      i2:"보안·부정이용 로그: 시스템 보호 및 부정 방지 목적으로 최대 90일"
+    },
+    warn: { strong:"⚠️ 주의:",
+      body:"삭제 후에는 복구가 불가합니다. 필요한 정보는 미리 저장해 두세요. 구독 중인 경우 Google Play에서 구독을 먼저 해지해야 추가 결제가 발생하지 않습니다. 계정을 삭제해도 Play 구독은 자동 해지되지 않습니다."
+    },
+    contact: { h:"기타 문의",
+      body:"계정 삭제 외 기타 문의는 아래 이메일로 연락해 주세요."
+    }
+  },
+
+  ja: {
+    title: "アカウント削除のご依頼",
+    labels: { lang:"言語", app:"アプリ:", email:"開発者メール:", requestMail:"削除依頼メール:", privacy:"プライバシーポリシー" },
+    values: { appName:"うちの子の算数カスタム" },
+    intro: "アカウントを削除する場合は、以下のいずれかの方法でお申し込みください。原則として営業日 3 日以内、遅くとも 30 日以内に処理します。",
+    inapp: { h:"方法 A — アプリ内で削除(推奨)",
+      s1:"保護者アカウントでログインし「マイページ」を開きます。",
+      s2:"「退会」をタップして確認します。",
+      s3:"アカウントおよび関連データがただちに削除されます。"
+    },
+    web: { h:"方法 B — メールで削除依頼",
+      s1:"下記の開発者メールに依頼メールをお送りください。",
+      s2:"件名:[アカウント削除依頼] うちの子の算数カスタム",
+      s3:"本文に登録時のメールアドレスおよび(該当する場合)Google / Kakao ソーシャルアカウントを明記してください。",
+      s4:"営業日 3 日以内(最長 30 日)に完了し、完了メールをお送りします。"
+    },
+    deleted: { h:"削除されるデータ",
+      i1:"アカウント情報(メール、表示名、認証 UID、プロフィール画像 URL)",
+      i2:"ファミリーおよびお子さまプロフィール(ニックネーム、PIN、学年、ファミリーコード)",
+      i3:"生成された問題集および提出/採点履歴",
+      i4:"弱点分析と学習統計",
+      i5:"サブスク状態、購入トークン、言語設定"
+    },
+    retained: { h:"法令により保持するデータ",
+      i1:"決済記録:税務・消費者保護法により最長 5 年",
+      i2:"不正利用・セキュリティログ:不正防止・システム保護のため最長 90 日"
+    },
+    warn: { strong:"⚠️ ご注意:",
+      body:"削除後は復元できません。必要な情報は事前に保存してください。サブスクご利用中の場合、Google Play で先に解約しないと課金が継続します。アカウント削除だけでは Play のサブスクは自動解約されません。"
+    },
+    contact: { h:"その他のお問い合わせ",
+      body:"アカウント削除以外のお問い合わせは、下記メールまでご連絡ください。"
+    }
+  },
+
+  zh_cn: {
+    title: "账号注销申请",
+    labels: { lang:"语言", app:"应用:", email:"开发者邮箱:", requestMail:"注销申请邮箱:", privacy:"隐私政策" },
+    values: { appName:"我家孩子定制算术" },
+    intro: "若您希望注销账号,请选择下面任一方式。我们将在工作日 3 天内(最长 30 天内)处理完毕。",
+    inapp: { h:"方式 A — 在应用内注销(推荐)",
+      s1:"使用家长账号登录并打开\"我的\"。",
+      s2:"点击\"注销账号\"并确认。",
+      s3:"账号及相关数据将立即删除。"
+    },
+    web: { h:"方式 B — 通过电子邮件申请",
+      s1:"请发送邮件至下方开发者邮箱。",
+      s2:"主题:[账号注销申请] 我家孩子定制算术",
+      s3:"正文请附注册邮箱以及(如适用)Google / Kakao 社交账号。",
+      s4:"我们将在工作日 3 天内(最长 30 天)完成,并发送确认邮件。"
+    },
+    deleted: { h:"将被删除的数据",
+      i1:"账号信息(邮箱、显示名称、认证 UID、头像 URL)",
+      i2:"家庭及儿童档案(昵称、PIN、年级、家庭码)",
+      i3:"生成的题集及提交/批改记录",
+      i4:"薄弱分析与学习统计",
+      i5:"订阅状态、购买令牌、语言偏好"
+    },
+    retained: { h:"依法保留的数据",
+      i1:"支付记录:依据税务与消费者保护法最长 5 年",
+      i2:"安全与滥用日志:用于防欺诈和系统保护最长 90 天"
+    },
+    warn: { strong:"⚠️ 提示:",
+      body:"注销不可撤销。请事先备份所需信息。若有订阅,请先在 Google Play 取消订阅,以免继续扣费。仅注销账号不会自动取消 Play 订阅。"
+    },
+    contact: { h:"其他咨询",
+      body:"注销以外的问题请发送邮件联系:"
+    }
+  },
+
+  zh_tw: {
+    title: "帳號刪除申請",
+    labels: { lang:"語言", app:"應用:", email:"開發者信箱:", requestMail:"刪除申請信箱:", privacy:"隱私權政策" },
+    values: { appName:"我家孩子客製算術" },
+    intro: "如欲刪除帳號,請以下列任一方式提出。我們將於工作日 3 日內(最長 30 日內)完成處理。",
+    inapp: { h:"方式 A — 於應用程式內刪除(建議)",
+      s1:"以家長帳號登入並開啟「我的」。",
+      s2:"點選「刪除帳號」並確認。",
+      s3:"帳號及相關資料將立即刪除。"
+    },
+    web: { h:"方式 B — 透過電子郵件申請",
+      s1:"請寄信至下方開發者信箱。",
+      s2:"主旨:[帳號刪除申請] 我家孩子客製算術",
+      s3:"內文請註明註冊電子郵件,以及(如適用)Google / Kakao 社交帳號。",
+      s4:"我們將於工作日 3 日內(最長 30 日)完成,並以電子郵件確認。"
+    },
+    deleted: { h:"將被刪除的資料",
+      i1:"帳號資料(電子郵件、顯示名稱、認證 UID、頭像 URL)",
+      i2:"家庭及子女檔案(暱稱、PIN、年級、家庭代碼)",
+      i3:"產生的題組與提交/批改紀錄",
+      i4:"弱點分析與學習統計",
+      i5:"訂閱狀態、購買權杖、語言偏好"
+    },
+    retained: { h:"依法保留的資料",
+      i1:"付款紀錄:依稅務與消費者保護法最多 5 年",
+      i2:"安全與濫用紀錄:防詐與系統維護最多 90 天"
+    },
+    warn: { strong:"⚠️ 注意:",
+      body:"刪除無法復原。請事先備份所需資料。若有訂閱,請先在 Google Play 取消訂閱,否則將持續扣款。僅刪除帳號不會自動取消 Play 訂閱。"
+    },
+    contact: { h:"其他詢問",
+      body:"刪除以外的問題請寄信至:"
+    }
+  },
+
+  es: {
+    title: "Solicitud de eliminación de cuenta",
+    labels: { lang:"Idioma", app:"App:", email:"Email del desarrollador:", requestMail:"Email para solicitud:", privacy:"Política de Privacidad" },
+    values: { appName:"Matemáticas Personalizadas para mi Hijo" },
+    intro: "Si desea eliminar su cuenta, utilice cualquiera de las opciones a continuación. Procesamos la solicitud en un plazo de 30 días (normalmente en 3 días hábiles).",
+    inapp: { h:"Opción A — Eliminar desde la app (recomendada)",
+      s1:"Inicie sesión como padre y abra «Mi página».",
+      s2:"Pulse «Eliminar cuenta» y confirme.",
+      s3:"Su cuenta y los datos relacionados se eliminarán de inmediato."
+    },
+    web: { h:"Opción B — Solicitar eliminación por correo",
+      s1:"Envíe un correo a la dirección del desarrollador.",
+      s2:"Asunto: [Solicitud de eliminación de cuenta] Matemáticas Personalizadas para mi Hijo.",
+      s3:"En el cuerpo, indique el correo de registro y, si corresponde, su cuenta social Google / Kakao.",
+      s4:"Completaremos la eliminación en 3 días hábiles (30 días como máximo) y enviaremos un correo de confirmación."
+    },
+    deleted: { h:"Qué se elimina",
+      i1:"Datos de cuenta (correo, nombre mostrado, UID de autenticación, URL de la foto)",
+      i2:"Perfiles de familia e hijos (apodo, PIN, grado, código de familia)",
+      i3:"Series de problemas y registros de envío/calificación",
+      i4:"Análisis de puntos débiles y estadísticas de aprendizaje",
+      i5:"Estado de suscripción, tokens de compra y preferencias de idioma"
+    },
+    retained: { h:"Qué conservamos (por ley)",
+      i1:"Registros de pago: hasta 5 años según la ley tributaria / de consumo",
+      i2:"Registros de seguridad y abuso: hasta 90 días para prevenir fraudes y proteger el sistema"
+    },
+    warn: { strong:"⚠️ Importante:",
+      body:"La eliminación es permanente e irreversible. Haga copia de seguridad de lo necesario antes. Si tiene una suscripción activa, cancélela primero en Google Play para evitar nuevos cargos. Eliminar la cuenta no cancela la suscripción de Play automáticamente."
+    },
+    contact: { h:"Otras consultas",
+      body:"Para otras consultas, contáctenos al correo indicado:"
+    }
+  },
+
+  pt: {
+    title: "Solicitação de exclusão de conta",
+    labels: { lang:"Idioma", app:"App:", email:"E-mail do desenvolvedor:", requestMail:"E-mail para solicitação:", privacy:"Política de Privacidade" },
+    values: { appName:"Matemática Personalizada do Meu Filho" },
+    intro: "Para excluir sua conta, use uma das opções abaixo. Processamos a solicitação em até 30 dias (geralmente em 3 dias úteis).",
+    inapp: { h:"Opção A — Excluir no app (recomendado)",
+      s1:"Entre como responsável e abra «Meu perfil».",
+      s2:"Toque em «Excluir conta» e confirme.",
+      s3:"Sua conta e dados relacionados serão removidos imediatamente."
+    },
+    web: { h:"Opção B — Solicitar por e-mail",
+      s1:"Envie um e-mail ao endereço do desenvolvedor abaixo.",
+      s2:"Assunto: [Solicitação de exclusão de conta] Matemática Personalizada do Meu Filho.",
+      s3:"No corpo, informe o e-mail usado no cadastro e, se aplicável, a conta social Google / Kakao.",
+      s4:"Concluiremos a exclusão em 3 dias úteis (máx. 30 dias) e enviaremos confirmação por e-mail."
+    },
+    deleted: { h:"O que é excluído",
+      i1:"Dados da conta (e-mail, nome exibido, UID de autenticação, URL da foto)",
+      i2:"Perfis de família e filhos (apelido, PIN, série, código da família)",
+      i3:"Conjuntos de problemas gerados e registros de envio/correção",
+      i4:"Análises de dificuldades e estatísticas de aprendizagem",
+      i5:"Estado da assinatura, tokens de compra e preferências de idioma"
+    },
+    retained: { h:"O que mantemos (por lei)",
+      i1:"Registros de pagamento: até 5 anos conforme a lei tributária/do consumidor",
+      i2:"Logs de segurança e abuso: até 90 dias para prevenção de fraudes e integridade do sistema"
+    },
+    warn: { strong:"⚠️ Importante:",
+      body:"A exclusão é permanente e irreversível. Faça backup do que precisa antes. Se houver assinatura ativa, cancele primeiro no Google Play para evitar cobranças. A exclusão da conta não cancela a assinatura do Play automaticamente."
+    },
+    contact: { h:"Outras dúvidas",
+      body:"Para outras dúvidas, entre em contato pelo e-mail abaixo:"
+    }
+  },
+
+  fr: {
+    title: "Demande de suppression de compte",
+    labels: { lang:"Langue", app:"Application :", email:"E-mail du développeur :", requestMail:"E-mail pour la demande :", privacy:"Politique de confidentialité" },
+    values: { appName:"Maths Personnalisés pour mon Enfant" },
+    intro: "Pour supprimer votre compte, utilisez l'une des options ci-dessous. Les demandes sont traitées sous 30 jours (généralement sous 3 jours ouvrés).",
+    inapp: { h:"Option A — Supprimer dans l'application (recommandé)",
+      s1:"Connectez-vous en tant que parent et ouvrez « Mon profil ».",
+      s2:"Touchez « Supprimer le compte » et confirmez.",
+      s3:"Votre compte et les données associées seront supprimés immédiatement."
+    },
+    web: { h:"Option B — Demande par e-mail",
+      s1:"Envoyez un e-mail à l'adresse du développeur ci-dessous.",
+      s2:"Objet : [Demande de suppression de compte] Maths Personnalisés pour mon Enfant.",
+      s3:"Dans le corps, indiquez l'e-mail utilisé à l'inscription et, le cas échéant, le compte social Google / Kakao.",
+      s4:"Nous finaliserons la suppression sous 3 jours ouvrés (30 jours max.) et enverrons une confirmation par e-mail."
+    },
+    deleted: { h:"Ce qui est supprimé",
+      i1:"Données du compte (e-mail, nom affiché, UID, URL de la photo)",
+      i2:"Profils de famille et enfants (surnom, PIN, niveau, code famille)",
+      i3:"Séries de problèmes et enregistrements d'envoi/notation",
+      i4:"Analyses de lacunes et statistiques d'apprentissage",
+      i5:"État d'abonnement, jetons d'achat et préférences de langue"
+    },
+    retained: { h:"Ce que nous conservons (obligations légales)",
+      i1:"Enregistrements de paiement : jusqu'à 5 ans (droit fiscal / consommation)",
+      i2:"Journaux de sécurité et d'abus : jusqu'à 90 jours pour la prévention de la fraude et l'intégrité du système"
+    },
+    warn: { strong:"⚠️ Important :",
+      body:"La suppression est définitive et irréversible. Sauvegardez ce qui est nécessaire au préalable. Si vous avez un abonnement actif, annulez-le d'abord dans Google Play pour éviter les prélèvements. La suppression du compte n'annule pas automatiquement l'abonnement Play."
+    },
+    contact: { h:"Autres questions",
+      body:"Pour toute autre question, contactez-nous :"
+    }
+  },
+
+  de: {
+    title: "Antrag auf Kontolöschung",
+    labels: { lang:"Sprache", app:"App:", email:"Entwickler-E-Mail:", requestMail:"E-Mail für Anfragen:", privacy:"Datenschutzerklärung" },
+    values: { appName:"Individuelles Rechnen für mein Kind" },
+    intro: "Zur Löschung Ihres Kontos wählen Sie eine der folgenden Optionen. Wir bearbeiten Anträge innerhalb von 30 Tagen (meist innerhalb von 3 Werktagen).",
+    inapp: { h:"Option A — In der App löschen (empfohlen)",
+      s1:"Melden Sie sich als Elternteil an und öffnen Sie „Mein Bereich".",
+      s2:"Tippen Sie auf „Konto löschen" und bestätigen Sie.",
+      s3:"Ihr Konto und zugehörige Daten werden sofort entfernt."
+    },
+    web: { h:"Option B — Löschung per E-Mail beantragen",
+      s1:"Senden Sie eine E-Mail an die unten genannte Entwickleradresse.",
+      s2:"Betreff: [Kontolöschung] Individuelles Rechnen für mein Kind.",
+      s3:"Geben Sie im Text die bei Anmeldung verwendete E-Mail und ggf. Ihr Google-/Kakao-Konto an.",
+      s4:"Wir schließen die Löschung innerhalb von 3 Werktagen (max. 30 Tagen) ab und bestätigen per E-Mail."
+    },
+    deleted: { h:"Was gelöscht wird",
+      i1:"Kontodaten (E-Mail, Anzeigename, Auth-UID, Profilbild-URL)",
+      i2:"Familien- und Kinderprofile (Spitzname, PIN, Klassenstufe, Familiencode)",
+      i3:"Erzeugte Aufgabensätze und Einreich-/Bewertungsdaten",
+      i4:"Schwächenanalysen und Lernstatistiken",
+      i5:"Abostatus, Kauf-Tokens und Spracheinstellungen"
+    },
+    retained: { h:"Was wir (gesetzlich) aufbewahren",
+      i1:"Zahlungsdaten: bis zu 5 Jahre gemäß Steuer- und Verbraucherrecht",
+      i2:"Sicherheits- und Missbrauchsprotokolle: bis zu 90 Tage für Betrugsprävention und Systemschutz"
+    },
+    warn: { strong:"⚠️ Wichtig:",
+      body:"Die Löschung ist endgültig und nicht rückgängig zu machen. Sichern Sie benötigte Daten vorher. Bei aktivem Abo kündigen Sie dieses zuerst im Google Play Store, sonst werden weiterhin Beträge abgebucht. Die Kontolöschung kündigt das Play-Abo nicht automatisch."
+    },
+    contact: { h:"Weitere Anfragen",
+      body:"Für andere Anliegen wenden Sie sich bitte an:"
+    }
+  },
+
+  ru: {
+    title: "Запрос на удаление аккаунта",
+    labels: { lang:"Язык", app:"Приложение:", email:"Эл. почта разработчика:", requestMail:"Почта для запросов:", privacy:"Политика конфиденциальности" },
+    values: { appName:"Персональная математика для ребёнка" },
+    intro: "Чтобы удалить аккаунт, выберите один из способов ниже. Запросы обрабатываются в течение 30 дней (обычно в течение 3 рабочих дней).",
+    inapp: { h:"Способ A — удалить в приложении (рекомендуется)",
+      s1:"Войдите как родитель и откройте «Мой профиль».",
+      s2:"Нажмите «Удалить аккаунт» и подтвердите.",
+      s3:"Аккаунт и связанные данные будут удалены немедленно."
+    },
+    web: { h:"Способ B — запрос по электронной почте",
+      s1:"Отправьте письмо на адрес разработчика ниже.",
+      s2:"Тема: [Запрос на удаление аккаунта] Персональная математика для ребёнка.",
+      s3:"В тексте укажите почту при регистрации и, при наличии, социальный аккаунт Google / Kakao.",
+      s4:"Удаление будет выполнено в течение 3 рабочих дней (максимум 30 дней), подтверждение придёт по e-mail."
+    },
+    deleted: { h:"Что удаляется",
+      i1:"Данные аккаунта (email, имя, UID, URL фото профиля)",
+      i2:"Профили семьи и детей (никнейм, PIN, класс, семейный код)",
+      i3:"Сгенерированные задания и записи отправки/проверки",
+      i4:"Анализ слабых тем и учебная статистика",
+      i5:"Статус подписки, токены покупок, языковые настройки"
+    },
+    retained: { h:"Что сохраняется (по закону)",
+      i1:"Платёжные записи: до 5 лет согласно налоговому и потребительскому праву",
+      i2:"Логи безопасности и злоупотреблений: до 90 дней для защиты от мошенничества и целостности системы"
+    },
+    warn: { strong:"⚠️ Важно:",
+      body:"Удаление необратимо. Предварительно сохраните нужные данные. При активной подписке сначала отмените её в Google Play, иначе списания продолжатся. Удаление аккаунта не отменяет подписку Play автоматически."
+    },
+    contact: { h:"Другие вопросы",
+      body:"По иным вопросам пишите на адрес ниже:"
+    }
+  },
+
+  th: {
+    title: "คำขอลบบัญชี",
+    labels: { lang:"ภาษา", app:"แอป:", email:"อีเมลนักพัฒนา:", requestMail:"อีเมลสำหรับคำขอ:", privacy:"นโยบายความเป็นส่วนตัว" },
+    values: { appName:"คณิตเฉพาะทางสำหรับลูก" },
+    intro: "หากต้องการลบบัญชี โปรดเลือกวิธีใดวิธีหนึ่งด้านล่าง เราจะดำเนินการภายใน 30 วัน (โดยปกติภายใน 3 วันทำการ)",
+    inapp: { h:"วิธี A — ลบในแอป (แนะนำ)",
+      s1:"เข้าสู่ระบบในบัญชีผู้ปกครองและเปิด \"หน้าของฉัน\"",
+      s2:"แตะ \"ลบบัญชี\" และยืนยัน",
+      s3:"บัญชีและข้อมูลที่เกี่ยวข้องจะถูกลบทันที"
+    },
+    web: { h:"วิธี B — ส่งอีเมลขอให้ลบ",
+      s1:"ส่งอีเมลไปยังที่อยู่อีเมลนักพัฒนาด้านล่าง",
+      s2:"หัวข้อ: [คำขอลบบัญชี] คณิตเฉพาะทางสำหรับลูก",
+      s3:"ในเนื้อหา ระบุอีเมลที่ใช้ลงทะเบียนและ (ถ้ามี) บัญชี Google / Kakao",
+      s4:"เราจะดำเนินการภายใน 3 วันทำการ (สูงสุด 30 วัน) และส่งอีเมลยืนยัน"
+    },
+    deleted: { h:"ข้อมูลที่จะถูกลบ",
+      i1:"ข้อมูลบัญชี (อีเมล ชื่อที่แสดง UID การยืนยันตัวตน URL รูปโปรไฟล์)",
+      i2:"โปรไฟล์ครอบครัวและบุตร (ชื่อเล่น, PIN, ระดับชั้น, รหัสครอบครัว)",
+      i3:"ชุดโจทย์ที่สร้างและบันทึกการส่ง/ตรวจ",
+      i4:"การวิเคราะห์จุดอ่อนและสถิติการเรียน",
+      i5:"สถานะการสมัคร โทเคนการซื้อ และการตั้งค่าภาษา"
+    },
+    retained: { h:"ข้อมูลที่ต้องเก็บตามกฎหมาย",
+      i1:"บันทึกการชำระเงิน: สูงสุด 5 ปีตามกฎหมายภาษี/คุ้มครองผู้บริโภค",
+      i2:"บันทึกความปลอดภัยและการละเมิด: สูงสุด 90 วัน เพื่อป้องกันการฉ้อโกงและปกป้องระบบ"
+    },
+    warn: { strong:"⚠️ ข้อสำคัญ:",
+      body:"เมื่อลบแล้วจะไม่สามารถกู้คืนได้ โปรดสำรองข้อมูลที่จำเป็นก่อน หากมีการสมัครสมาชิก โปรดยกเลิกใน Google Play ก่อน ไม่เช่นนั้นจะถูกเรียกเก็บต่อ การลบบัญชีไม่ได้ยกเลิกการสมัครสมาชิก Play โดยอัตโนมัติ"
+    },
+    contact: { h:"สอบถามเพิ่มเติม",
+      body:"หากต้องการสอบถามเรื่องอื่น โปรดติดต่ออีเมลด้านล่าง:"
+    }
+  },
+
+  id: {
+    title: "Permintaan Penghapusan Akun",
+    labels: { lang:"Bahasa", app:"Aplikasi:", email:"Email pengembang:", requestMail:"Email permintaan:", privacy:"Kebijakan Privasi" },
+    values: { appName:"Matematika Khusus untuk Anak Saya" },
+    intro: "Untuk menghapus akun, gunakan salah satu opsi di bawah. Permintaan diproses dalam 30 hari (biasanya dalam 3 hari kerja).",
+    inapp: { h:"Opsi A — Hapus di aplikasi (disarankan)",
+      s1:"Masuk sebagai orang tua dan buka \"Halaman Saya\".",
+      s2:"Ketuk \"Hapus akun\" lalu konfirmasi.",
+      s3:"Akun dan data terkait akan dihapus seketika."
+    },
+    web: { h:"Opsi B — Minta penghapusan via email",
+      s1:"Kirim email ke alamat pengembang di bawah.",
+      s2:"Subjek: [Permintaan Penghapusan Akun] Matematika Khusus untuk Anak Saya.",
+      s3:"Di badan email, sertakan email yang digunakan saat mendaftar dan, jika ada, akun Google / Kakao.",
+      s4:"Kami akan menyelesaikan dalam 3 hari kerja (maks. 30 hari) dan mengirim email konfirmasi."
+    },
+    deleted: { h:"Data yang dihapus",
+      i1:"Data akun (email, nama tampilan, UID autentikasi, URL foto profil)",
+      i2:"Profil keluarga dan anak (nama panggilan, PIN, kelas, kode keluarga)",
+      i3:"Set soal yang dibuat dan rekam jejak pengumpulan/penilaian",
+      i4:"Analisis kelemahan dan statistik belajar",
+      i5:"Status langganan, token pembelian, preferensi bahasa"
+    },
+    retained: { h:"Yang kami simpan (wajib oleh hukum)",
+      i1:"Catatan pembayaran: hingga 5 tahun sesuai hukum pajak/konsumen",
+      i2:"Log keamanan dan penyalahgunaan: hingga 90 hari untuk pencegahan penipuan dan integritas sistem"
+    },
+    warn: { strong:"⚠️ Penting:",
+      body:"Penghapusan bersifat permanen dan tidak dapat dibatalkan. Cadangkan data penting terlebih dahulu. Jika Anda memiliki langganan aktif, batalkan dulu di Google Play untuk mencegah tagihan lanjutan. Menghapus akun tidak otomatis membatalkan langganan Play."
+    },
+    contact: { h:"Pertanyaan lain",
+      body:"Untuk pertanyaan lain, hubungi email di bawah:"
+    }
+  },
+
+  vi: {
+    title: "Yêu cầu Xóa Tài Khoản",
+    labels: { lang:"Ngôn ngữ", app:"Ứng dụng:", email:"Email nhà phát triển:", requestMail:"Email yêu cầu:", privacy:"Chính sách Bảo mật" },
+    values: { appName:"Toán cá nhân hóa cho con tôi" },
+    intro: "Để xóa tài khoản, vui lòng sử dụng một trong các lựa chọn bên dưới. Chúng tôi xử lý yêu cầu trong vòng 30 ngày (thường là trong vòng 3 ngày làm việc).",
+    inapp: { h:"Cách A — Xóa trong ứng dụng (khuyến nghị)",
+      s1:"Đăng nhập tài khoản phụ huynh và mở \"Trang của tôi\".",
+      s2:"Nhấn \"Xóa tài khoản\" và xác nhận.",
+      s3:"Tài khoản và dữ liệu liên quan sẽ bị xóa ngay lập tức."
+    },
+    web: { h:"Cách B — Yêu cầu qua email",
+      s1:"Gửi email đến địa chỉ nhà phát triển bên dưới.",
+      s2:"Tiêu đề: [Yêu cầu Xóa Tài Khoản] Toán cá nhân hóa cho con tôi.",
+      s3:"Trong nội dung, ghi rõ email khi đăng ký và, nếu có, tài khoản Google / Kakao.",
+      s4:"Chúng tôi sẽ hoàn tất trong 3 ngày làm việc (tối đa 30 ngày) và gửi email xác nhận."
+    },
+    deleted: { h:"Những gì bị xóa",
+      i1:"Thông tin tài khoản (email, tên hiển thị, UID, URL ảnh đại diện)",
+      i2:"Hồ sơ gia đình và trẻ (biệt danh, PIN, khối lớp, mã gia đình)",
+      i3:"Bộ bài tập được tạo và hồ sơ nộp bài / chấm",
+      i4:"Phân tích điểm yếu và thống kê học tập",
+      i5:"Trạng thái thuê bao, token mua, cài đặt ngôn ngữ"
+    },
+    retained: { h:"Những gì chúng tôi giữ (theo luật)",
+      i1:"Bản ghi thanh toán: tối đa 5 năm theo luật thuế / bảo vệ người tiêu dùng",
+      i2:"Nhật ký bảo mật và lạm dụng: tối đa 90 ngày để ngăn gian lận và bảo vệ hệ thống"
+    },
+    warn: { strong:"⚠️ Quan trọng:",
+      body:"Việc xóa là vĩnh viễn và không thể hoàn tác. Hãy sao lưu những gì cần thiết trước. Nếu bạn đang có thuê bao, hãy hủy trong Google Play trước để tránh tiếp tục bị tính phí. Xóa tài khoản không tự động hủy thuê bao Play."
+    },
+    contact: { h:"Câu hỏi khác",
+      body:"Với các câu hỏi khác, vui lòng liên hệ email bên dưới:"
+    }
+  }
+};
+
+function applyLang(lang){
+  const dict = I18N[lang] || I18N.en;
+  document.documentElement.lang = lang.replace('_','-');
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const path = el.getAttribute('data-i18n').split('.');
+    let v = dict;
+    for (const k of path) { v = v && v[k]; }
+    if (typeof v === 'string') el.textContent = v;
+  });
+  document.title = (I18N[lang]?.title || 'Account Deletion') + " — My Kid's Custom Math";
+  try { localStorage.setItem('mkcm_lang', lang); } catch(_) {}
+}
+
+function detectLang(){
+  try { const s = localStorage.getItem('mkcm_lang'); if (s && I18N[s]) return s; } catch(_) {}
+  const nav = (navigator.language || 'en').toLowerCase();
+  if (nav.startsWith('ko')) return 'ko';
+  if (nav.startsWith('ja')) return 'ja';
+  if (nav.startsWith('zh')) return nav.includes('tw') || nav.includes('hk') || nav.includes('hant') ? 'zh_tw' : 'zh_cn';
+  if (nav.startsWith('es')) return 'es';
+  if (nav.startsWith('pt')) return 'pt';
+  if (nav.startsWith('fr')) return 'fr';
+  if (nav.startsWith('de')) return 'de';
+  if (nav.startsWith('ru')) return 'ru';
+  if (nav.startsWith('th')) return 'th';
+  if (nav.startsWith('id') || nav.startsWith('in')) return 'id';
+  if (nav.startsWith('vi')) return 'vi';
+  return 'en';
+}
+
+const sel = document.getElementById('langSel');
+const init = detectLang();
+sel.value = init;
+applyLang(init);
+sel.addEventListener('change', e => applyLang(e.target.value));
+</script>
+
 </body>
 </html>

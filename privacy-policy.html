@@ -1,63 +1,1196 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>개인정보처리방침 - 우리 아이 맞춤 연산</title>
-    <style>
-        body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; line-height: 1.7; padding: 30px; color: #444; max-width: 800px; margin: auto; }
-        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
-        h2 { color: #2980b9; margin-top: 35px; }
-        .highlight { background-color: #fcf8e3; padding: 10px; border-left: 5px solid #f1c40f; margin: 15px 0; }
-        footer { margin-top: 50px; font-size: 0.9em; color: #888; text-align: center; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — My Kid's Custom Math</title>
+  <style>
+    :root { --primary:#4F86F7; --primary-dark:#2E5FD9; --bg:#f0f4ff; --border:#e5e7eb; --text:#1a1a2e; --muted:#6b7280; }
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Segoe UI', Roboto, sans-serif; line-height: 1.8; padding: 24px 20px 64px; color: var(--text); max-width: 860px; margin: auto; }
+    h1 { color: var(--primary); font-size: 26px; border-bottom: 3px solid var(--primary); padding-bottom: 12px; margin-bottom: 8px; }
+    h2 { color: var(--primary-dark); font-size: 18px; margin-top: 36px; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+    th, td { border: 1px solid var(--border); padding: 10px 14px; text-align: left; vertical-align: top; }
+    th { background: var(--bg); font-weight: 600; }
+    .info-box { background: var(--bg); border-left: 4px solid var(--primary); padding: 12px 16px; margin: 16px 0; border-radius: 4px; font-size: 14px; }
+    .lang-bar { display:flex; justify-content:flex-end; align-items:center; gap:8px; margin-bottom:8px; font-size:13px; color: var(--muted); }
+    .lang-bar select { padding:6px 10px; border-radius:6px; border:1px solid var(--border); background:#fff; font-size:13px; }
+    footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; text-align: center; }
+    a { color: var(--primary); }
+    ul { padding-left: 22px; }
+    li { margin: 4px 0; }
+    code { background:#f6f7f9; padding: 1px 6px; border-radius:4px; font-size: 13px; }
+  </style>
 </head>
 <body>
-    <h1>개인정보처리방침 (Privacy Policy)</h1>
-    <p><strong>우리 아이 맞춤 연산</strong> (이하 '본 앱')은 이용자의 개인정보를 소중히 다루며, 관련 법령을 준수합니다. 본 앱은 모든 연령층이 이용할 수 있는 교육용 서비스입니다.</p>
 
-    <div class="highlight">
-        <strong>앱 정보:</strong> 우리 아이 맞춤 연산 <br>
-        <strong>패키지명:</strong> com.magicmath.app
-    </div>
+<div class="lang-bar">
+  <span data-i18n="labels.lang">Language</span>
+  <select id="langSel" aria-label="Language">
+    <option value="en">English</option>
+    <option value="ko">한국어</option>
+    <option value="ja">日本語</option>
+    <option value="zh_cn">简体中文</option>
+    <option value="zh_tw">繁體中文</option>
+    <option value="es">Español</option>
+    <option value="pt">Português</option>
+    <option value="fr">Français</option>
+    <option value="de">Deutsch</option>
+    <option value="ru">Русский</option>
+    <option value="th">ภาษาไทย</option>
+    <option value="id">Bahasa Indonesia</option>
+    <option value="vi">Tiếng Việt</option>
+  </select>
+</div>
 
-    <h2>1. 수집하는 개인정보 항목 및 방법</h2>
-    <p>본 앱은 원칙적으로 이용자의 직접적인 개인정보(이름, 이메일, 연락처 등)를 수집하지 않습니다. 다만, 서비스 제공 과정에서 아래와 같은 정보가 자동 생성되거나 수집될 수 있습니다.</p>
-    <ul>
-        <li><strong>기기 정보:</strong> 모델명, OS 버전, 언어 설정 (서비스 최적화 용도)</li>
-        <li><strong>결제 정보:</strong> 인앱 상품(미디움권, 구독권) 구매 시 발생하는 구글 결제 영수증 번호 및 결제 상태 (구매 권한 확인 용도)</li>
-    </ul>
+<h1 data-i18n="title">Privacy Policy</h1>
+<p><strong data-i18n="labels.effective">Effective:</strong> 2026-04-16 &nbsp;|&nbsp;
+   <strong data-i18n="labels.updated">Last updated:</strong> 2026-04-16</p>
 
-    <h2>2. 아동의 개인정보 보호 (어린이 이용자)</h2>
-    <p>본 앱은 어린이들의 온라인 개인정보를 보호하기 위해 다음을 준수합니다.</p>
-    <ul>
-        <li>만 13세 미만(또는 해당 지역 법령 기준 연령) 아동으로부터 고의로 개인 식별 정보를 수집하지 않습니다.</li>
-        <li>아동에게 부적절한 맞춤형 광고를 제공하지 않습니다.</li>
-    </ul>
+<div class="info-box">
+  <strong data-i18n="labels.appName">App:</strong> <span data-i18n="values.appName">My Kid's Custom Math</span> &nbsp;|&nbsp;
+  <strong data-i18n="labels.package">Package:</strong> com.magicmath.app &nbsp;|&nbsp;
+  <strong data-i18n="labels.contact">Contact:</strong> <a href="mailto:alsntud1004@gmail.com">alsntud1004@gmail.com</a>
+</div>
 
-    <h2>3. 개인정보의 이용 목적</h2>
-    <ul>
-        <li><strong>서비스 제공:</strong> 난이도별 수학 문제 생성 및 학습 콘텐츠 제공</li>
-        <li><strong>결제 관리:</strong> 인앱 상품 구매 확인 및 프리미엄 기능 활성화</li>
-        <li><strong>서비스 개선:</strong> 앱 오류 분석 및 사용성 향상</li>
-    </ul>
+<p data-i18n="intro"></p>
 
-    <h2>4. 개인정보의 제3자 제공</h2>
-    <p>본 앱은 이용자의 정보를 외부에 제공하지 않습니다. 다만, 아래의 경우에는 예외로 합니다.</p>
-    <ul>
-        <li><strong>Google Play 서비스:</strong> 인앱 결제 처리를 위해 구글의 시스템을 이용하며, 이 과정에서 구글의 개인정보 처리방침이 적용됩니다.</li>
-    </ul>
+<h2 data-i18n="s1.h">1. Information We Collect</h2>
+<table>
+  <thead>
+    <tr><th data-i18n="s1.c1">Category</th><th data-i18n="s1.c2">Items</th><th data-i18n="s1.c3">Collection Method</th></tr>
+  </thead>
+  <tbody>
+    <tr><td data-i18n="s1.r1a"></td><td data-i18n="s1.r1b"></td><td data-i18n="s1.r1c"></td></tr>
+    <tr><td data-i18n="s1.r2a"></td><td data-i18n="s1.r2b"></td><td data-i18n="s1.r2c"></td></tr>
+    <tr><td data-i18n="s1.r3a"></td><td data-i18n="s1.r3b"></td><td data-i18n="s1.r3c"></td></tr>
+    <tr><td data-i18n="s1.r4a"></td><td data-i18n="s1.r4b"></td><td data-i18n="s1.r4c"></td></tr>
+    <tr><td data-i18n="s1.r5a"></td><td data-i18n="s1.r5b"></td><td data-i18n="s1.r5c"></td></tr>
+  </tbody>
+</table>
+<p data-i18n="s1.note"></p>
 
-    <h2>5. 데이터 보안 및 파기</h2>
-    <p>이용자가 앱을 삭제하거나 서비스 이용 목적이 달성된 경우, 수집된 기기 식별 정보 및 결제 영수증 데이터는 지체 없이 파기됩니다.</p>
+<h2 data-i18n="s2.h">2. Purposes of Processing</h2>
+<ul>
+  <li data-i18n="s2.i1"></li>
+  <li data-i18n="s2.i2"></li>
+  <li data-i18n="s2.i3"></li>
+  <li data-i18n="s2.i4"></li>
+  <li data-i18n="s2.i5"></li>
+</ul>
 
-    <h2>6. 이용자의 권리 및 문의처</h2>
-    <p>이용자(또는 법정대리인)는 언제든지 앱 삭제를 통해 데이터 수집을 거부할 수 있으며, 아래 연락처로 개인정보 열람 및 삭제를 요청할 수 있습니다.</p>
-    <p><strong>담당자 이메일:</strong> alsntud1004@gmail.com</p>
+<h2 data-i18n="s3.h">3. Legal Basis (EEA / UK users)</h2>
+<p data-i18n="s3.body"></p>
 
-    <footer>
-        <p>시행일자: 2026년 3월 22일</p>
-        <!-- <p>&copy; 2026 Magic Math All Rights Reserved.</p> -->
-    </footer>
+<h2 data-i18n="s4.h">4. Retention Period</h2>
+<table>
+  <thead><tr><th data-i18n="s4.c1">Item</th><th data-i18n="s4.c2">Retention</th></tr></thead>
+  <tbody>
+    <tr><td data-i18n="s4.r1a"></td><td data-i18n="s4.r1b"></td></tr>
+    <tr><td data-i18n="s4.r2a"></td><td data-i18n="s4.r2b"></td></tr>
+    <tr><td data-i18n="s4.r3a"></td><td data-i18n="s4.r3b"></td></tr>
+  </tbody>
+</table>
+
+<h2 data-i18n="s5.h">5. Service Providers / Processors</h2>
+<table>
+  <thead><tr><th data-i18n="s5.c1">Processor</th><th data-i18n="s5.c2">Purpose</th><th data-i18n="s5.c3">Region</th></tr></thead>
+  <tbody>
+    <tr><td>Google Firebase (Auth, Firestore, Functions, Crashlytics)</td><td data-i18n="s5.r1b"></td><td data-i18n="s5.r1c">US / Global</td></tr>
+    <tr><td>Google Play Billing</td><td data-i18n="s5.r2b"></td><td data-i18n="s5.r2c">Global</td></tr>
+    <tr><td>Google AdMob</td><td data-i18n="s5.r3b"></td><td data-i18n="s5.r3c">Global</td></tr>
+    <tr><td data-i18n="s5.r4a">Kakao Corp. (Korea only)</td><td data-i18n="s5.r4b"></td><td data-i18n="s5.r4c">Republic of Korea</td></tr>
+  </tbody>
+</table>
+<p data-i18n="s5.note"></p>
+
+<h2 data-i18n="s6.h">6. International Data Transfers</h2>
+<p data-i18n="s6.body"></p>
+
+<h2 data-i18n="s7.h">7. Children's Privacy (COPPA / GDPR-K)</h2>
+<p data-i18n="s7.body"></p>
+<ul>
+  <li data-i18n="s7.i1"></li>
+  <li data-i18n="s7.i2"></li>
+  <li data-i18n="s7.i3"></li>
+  <li data-i18n="s7.i4"></li>
+</ul>
+
+<h2 data-i18n="s8.h">8. Your Rights</h2>
+<p data-i18n="s8.lead"></p>
+<ul>
+  <li data-i18n="s8.i1"></li>
+  <li data-i18n="s8.i2"></li>
+  <li data-i18n="s8.i3"></li>
+  <li data-i18n="s8.i4"></li>
+  <li data-i18n="s8.i5"></li>
+  <li data-i18n="s8.i6"></li>
+</ul>
+<p data-i18n="s8.how"></p>
+
+<h2 data-i18n="s9.h">9. California Residents (CCPA / CPRA)</h2>
+<p data-i18n="s9.body"></p>
+
+<h2 data-i18n="s10.h">10. We Do Not Sell Personal Information</h2>
+<p data-i18n="s10.body"></p>
+
+<h2 data-i18n="s11.h">11. Security</h2>
+<p data-i18n="s11.body"></p>
+
+<h2 data-i18n="s12.h">12. Changes to This Policy</h2>
+<p data-i18n="s12.body"></p>
+
+<h2 data-i18n="s13.h">13. Contact / Data Protection Officer</h2>
+<p data-i18n="s13.body"></p>
+<p>Email: <a href="mailto:alsntud1004@gmail.com">alsntud1004@gmail.com</a></p>
+
+<footer>
+  © 2026 My Kid's Custom Math &nbsp;|&nbsp;
+  <a href="mailto:alsntud1004@gmail.com">alsntud1004@gmail.com</a> &nbsp;|&nbsp;
+  <a href="./account-delete.html" data-i18n="labels.delete">Account Deletion</a>
+</footer>
+
+<script>
+const I18N = {
+  en: {
+    title: "Privacy Policy",
+    labels: { lang:"Language", effective:"Effective:", updated:"Last updated:", appName:"App:", package:"Package:", contact:"Contact:", delete:"Account Deletion" },
+    values: { appName:"My Kid's Custom Math" },
+    intro: "My Kid's Custom Math (the \"Service\") respects your privacy. This Policy explains what information we collect, how we use it, and your rights. It complies with Korea's PIPA, the EU/UK GDPR, California CCPA/CPRA, the U.S. COPPA, Brazil's LGPD, and Google Play policies.",
+    s1: { h:"1. Information We Collect",
+      c1:"Category", c2:"Items", c3:"Collection Method",
+      r1a:"Account", r1b:"Email, display name, profile photo URL, auth UID", r1c:"Automatically collected on Google / Kakao social login",
+      r2a:"Child profile", r2b:"Nickname, 4-digit PIN (hashed on device), grade", r2c:"Entered by the parent/guardian",
+      r3a:"Learning data", r3b:"Generated problems, answers, scores, weakness stats, preferred language", r3c:"Generated while using the app",
+      r4a:"Billing", r4b:"Subscription tier, purchase token, transaction ID, purchase/expiry dates", r4c:"Via Google Play Billing (we never receive card numbers)",
+      r5a:"Technical", r5b:"Firebase install ID, crash logs, ad identifiers (AdMob)", r5c:"Automatically on first launch / on ad requests",
+      note:"We do not collect sensitive categories of data (health, biometrics, precise location)."
+    },
+    s2: { h:"2. Purposes of Processing",
+      i1:"Create and manage parent/student accounts",
+      i2:"Generate math problems and return grading and weakness analyses",
+      i3:"Manage subscriptions and deliver purchased features",
+      i4:"Diagnose errors, improve quality, and display non-personalized ads to free-plan parent accounts",
+      i5:"Send service announcements and legally required notices"
+    },
+    s3: { h:"3. Legal Basis (EEA / UK users)",
+      body:"We rely on the following GDPR Art. 6 bases: (a) performance of the contract to provide the Service; (b) your consent for optional features such as analytics or non-essential cookies; (c) our legitimate interests in service security and improvement; and (d) compliance with legal obligations (e.g., tax records)."
+    },
+    s4: { h:"4. Retention Period",
+      c1:"Item", c2:"Retention",
+      r1a:"Account & learning data", r1b:"Deleted immediately on account closure (within 30 days)",
+      r2a:"Payment records", r2b:"Up to 5 years where required by tax / consumer protection law",
+      r3a:"Crash & diagnostic logs", r3b:"Up to 90 days"
+    },
+    s5: { h:"5. Service Providers / Processors",
+      c1:"Processor", c2:"Purpose", c3:"Region",
+      r1b:"Authentication, database, cloud functions, crash reporting",
+      r2b:"In-app purchase and subscription processing",
+      r3b:"Non-personalized advertising (for free plan users only)",
+      r4a:"Kakao Corp. (Korea only)",
+      r4b:"Kakao social login (offered only in the Republic of Korea)",
+      r4c:"Republic of Korea",
+      note:"Each processor acts under a data processing agreement and only for the purposes above."
+    },
+    s6: { h:"6. International Data Transfers",
+      body:"Your data may be stored and processed on Google/Firebase servers located outside your country (primarily in the United States). For EEA/UK users, we rely on the European Commission's Standard Contractual Clauses (SCCs) and Google Cloud's data transfer framework to provide an adequate level of protection."
+    },
+    s7: { h:"7. Children's Privacy (COPPA / GDPR-K)",
+      body:"The Service is designed for elementary-school children used under a parent/guardian account. We do not knowingly collect personal information directly from children under the applicable age of digital consent (13 in the U.S. under COPPA; 13–16 in the EEA; 14 in Korea) without verifiable parental consent.",
+      i1:"The parent creates and controls the child profile; children do not submit personal data directly.",
+      i2:"We do not serve personalized/behavioral advertising to children.",
+      i3:"Ads shown to free-plan users are non-personalized and age-appropriate (AdMob child-directed treatment enabled).",
+      i4:"Parents may review, correct, or delete their child's data at any time via the contact email below."
+    },
+    s8: { h:"8. Your Rights",
+      lead:"Depending on your jurisdiction (PIPA / GDPR / UK GDPR / LGPD / CCPA), you have the following rights:",
+      i1:"Right to access and obtain a copy of your personal data",
+      i2:"Right to rectify inaccurate or incomplete data",
+      i3:"Right to erasure (\"right to be forgotten\")",
+      i4:"Right to restriction and objection to processing",
+      i5:"Right to data portability",
+      i6:"Right to withdraw consent at any time, and to lodge a complaint with your supervisory authority",
+      how:"To exercise any of these rights, email alsntud1004@gmail.com. We will respond within 30 days. You may also delete your account in-app or through the Account Deletion page."
+    },
+    s9: { h:"9. California Residents (CCPA / CPRA)",
+      body:"California residents have the right to know the categories and specific pieces of personal information we have collected, to delete that information, to correct inaccuracies, and to limit the use of sensitive personal information. The categories we collect are listed in Section 1. We do not use or disclose sensitive personal information for purposes that would require the right to limit."
+    },
+    s10:{ h:"10. We Do Not Sell Personal Information",
+      body:"We do not sell personal information as defined by the CCPA/CPRA, and we do not share personal information for cross-context behavioral advertising. Children's data is never sold or shared for advertising."
+    },
+    s11:{ h:"11. Security",
+      body:"We use Firebase Authentication, Firestore security rules, and TLS 1.2+ encryption in transit. Access to production systems is restricted and audited. Despite reasonable safeguards, no method of transmission or storage is 100% secure."
+    },
+    s12:{ h:"12. Changes to This Policy",
+      body:"We may update this Policy to reflect changes in law or in our practices. Material changes will be notified in-app at least 7 days before taking effect (30 days where required by law). The \"Last updated\" date at the top always reflects the current version."
+    },
+    s13:{ h:"13. Contact / Data Protection Officer",
+      body:"For any privacy-related questions or to exercise your rights, contact our Data Protection contact:"
+    }
+  },
+
+  ko: {
+    title: "개인정보처리방침",
+    labels: { lang:"언어", effective:"시행일:", updated:"최종 수정:", appName:"앱명:", package:"패키지:", contact:"문의:", delete:"계정 삭제" },
+    values: { appName:"우리아이맞춤연산" },
+    intro: "우리아이맞춤연산(이하 \"서비스\")은 이용자의 개인정보를 소중히 여기며, 「개인정보 보호법」, EU/UK GDPR, 미국 COPPA·CCPA/CPRA, 브라질 LGPD 및 Google Play 정책을 준수합니다.",
+    s1: { h:"1. 수집하는 개인정보",
+      c1:"구분", c2:"항목", c3:"수집 방법",
+      r1a:"계정 정보", r1b:"이메일, 표시 이름, 프로필 사진 URL, 인증 UID", r1c:"Google / 카카오 소셜 로그인 시 자동 수집",
+      r2a:"자녀 프로필", r2b:"닉네임, 4자리 PIN(단말 내 해시 저장), 학년", r2c:"학부모(보호자)가 직접 입력",
+      r3a:"학습 데이터", r3b:"생성된 문제, 답안, 점수, 약점 분석, 선호 언어", r3c:"앱 이용 중 자동 생성",
+      r4a:"결제 정보", r4b:"구독 등급, 구매 토큰, 거래 ID, 구매/만료일", r4c:"Google Play 인앱 결제 처리 시 자동 수집(카드번호는 수집하지 않음)",
+      r5a:"기술 정보", r5b:"Firebase 설치 ID, 크래시 로그, AdMob 광고 식별자", r5c:"앱 최초 실행 / 광고 요청 시 자동 수집",
+      note:"※ 건강정보·생체정보·정밀 위치정보 등 민감정보는 수집하지 않습니다."
+    },
+    s2: { h:"2. 수집 및 이용 목적",
+      i1:"학부모/학생 계정 생성 및 관리",
+      i2:"자녀 맞춤 연산 문제 생성·채점·약점 분석 제공",
+      i3:"구독 플랜 관리 및 결제 처리",
+      i4:"오류 진단·품질 개선, 무료 플랜 학부모 계정에 대한 비맞춤형 광고 제공",
+      i5:"서비스 공지 및 법령상 고지"
+    },
+    s3: { h:"3. 처리의 법적 근거 (EEA/UK 이용자)",
+      body:"GDPR 제6조에 따라 (a) 서비스 제공을 위한 계약 이행, (b) 선택 기능(분석 등)에 대한 이용자 동의, (c) 서비스 보안·품질 개선에 관한 정당한 이익, (d) 세무·소비자보호 등 법적 의무 이행을 근거로 개인정보를 처리합니다."
+    },
+    s4: { h:"4. 보유 기간",
+      c1:"항목", c2:"보유 기간",
+      r1a:"계정 정보 · 학습 데이터", r1b:"회원 탈퇴 요청 시 30일 이내 즉시 삭제",
+      r2a:"결제 기록", r2b:"관련 법령(전자상거래법 등)에 따라 최대 5년",
+      r3a:"크래시·진단 로그", r3b:"최대 90일"
+    },
+    s5: { h:"5. 개인정보 처리 위탁",
+      c1:"수탁자", c2:"위탁 업무", c3:"지역",
+      r1b:"인증, 데이터베이스, 서버 함수, 크래시 리포트",
+      r2b:"인앱 결제 및 구독 처리",
+      r3b:"무료 플랜 이용자 대상 비맞춤형 광고 제공",
+      r4a:"카카오(주) (한국 한정)",
+      r4b:"카카오 소셜 로그인 (대한민국 내에서만 제공)",
+      r4c:"대한민국",
+      note:"※ 각 수탁자는 개인정보 처리 위탁 계약에 따라 상기 목적 외에는 개인정보를 처리하지 않습니다."
+    },
+    s6: { h:"6. 국외 이전",
+      body:"이용자의 개인정보는 Google/Firebase 서버가 위치한 해외(주로 미국)에서 저장·처리될 수 있습니다. EEA/UK 이용자에 대해서는 EU 표준계약조항(SCC) 및 Google Cloud의 데이터 이전 프레임워크를 통해 적정 수준의 보호를 보장합니다."
+    },
+    s7: { h:"7. 아동의 개인정보 보호 (COPPA / GDPR-K)",
+      body:"본 서비스는 초등학생 자녀를 위한 학습 앱으로, 학부모(보호자) 계정에서 관리됩니다. 각국 디지털 동의 연령(미국 13세, EEA 13~16세, 한국 14세) 미만의 아동으로부터 검증 가능한 보호자 동의 없이 개인정보를 직접 수집하지 않습니다.",
+      i1:"자녀 프로필은 학부모가 생성·관리하며, 아동이 직접 개인정보를 입력하지 않습니다.",
+      i2:"아동에게 맞춤형/행태 광고를 제공하지 않습니다.",
+      i3:"무료 플랜 이용자에게 표시되는 광고는 연령에 적합한 비맞춤형 광고입니다(AdMob 아동 대상 설정 적용).",
+      i4:"학부모는 문의 이메일을 통해 자녀 데이터 열람·정정·삭제를 언제든 요청할 수 있습니다."
+    },
+    s8: { h:"8. 이용자의 권리",
+      lead:"개인정보 보호법 / GDPR / UK GDPR / LGPD / CCPA에 따라 다음 권리를 가집니다:",
+      i1:"개인정보 열람 및 사본 요구",
+      i2:"부정확한 정보의 정정",
+      i3:"삭제(잊힐 권리)",
+      i4:"처리의 제한·반대",
+      i5:"데이터 이동 요구",
+      i6:"동의 철회 및 감독기관(개인정보보호위원회 등)에 민원 제기",
+      how:"권리 행사는 alsntud1004@gmail.com으로 요청하시면 30일 이내 처리합니다. 앱 내 회원탈퇴 기능 또는 계정 삭제 페이지를 통해서도 삭제 가능합니다."
+    },
+    s9: { h:"9. 캘리포니아 거주자 (CCPA / CPRA)",
+      body:"캘리포니아 거주자는 수집된 개인정보의 범주 및 항목을 알 권리, 삭제 권리, 정정 권리, 민감정보의 이용 제한 권리를 가집니다. 수집 범주는 제1조를 참고하시기 바랍니다."
+    },
+    s10:{ h:"10. 개인정보 판매 금지",
+      body:"CCPA/CPRA에서 정의하는 '판매' 또는 '공유'에 해당하는 행위를 하지 않으며, 교차 맥락 행태 광고(cross-context behavioral advertising)를 위한 정보 공유를 하지 않습니다. 아동의 데이터는 절대 판매·공유되지 않습니다."
+    },
+    s11:{ h:"11. 안전성 확보 조치",
+      body:"Firebase 인증, Firestore 보안 규칙, 전송 구간 TLS 1.2+ 암호화를 적용하며, 운영 시스템 접근을 통제·감사합니다. 다만 인터넷 특성상 절대적인 안전성은 보장되지 않습니다."
+    },
+    s12:{ h:"12. 방침 변경",
+      body:"법령 또는 서비스 정책 변경 시 본 방침을 개정할 수 있으며, 중대한 변경은 시행일 7일 전(법령상 요구 시 30일 전)까지 앱 공지를 통해 안내합니다. 상단의 '최종 수정일'이 현재 버전을 나타냅니다."
+    },
+    s13:{ h:"13. 개인정보 보호책임자 / 문의",
+      body:"개인정보와 관련한 문의 또는 권리 행사는 아래 담당자에게 연락해 주세요."
+    }
+  },
+
+  ja: {
+    title: "プライバシーポリシー",
+    labels: { lang:"言語", effective:"施行日:", updated:"最終更新:", appName:"アプリ名:", package:"パッケージ:", contact:"お問い合わせ:", delete:"アカウント削除" },
+    values: { appName:"うちの子の算数カスタム" },
+    intro: "本アプリ(以下「本サービス」)は、利用者のプライバシーを尊重し、韓国個人情報保護法、EU/UK GDPR、米国 COPPA および CCPA/CPRA、ブラジル LGPD、ならびに Google Play ポリシーを遵守します。",
+    s1: { h:"1. 収集する情報",
+      c1:"区分", c2:"項目", c3:"収集方法",
+      r1a:"アカウント", r1b:"メール、表示名、プロフィール画像 URL、認証 UID", r1c:"Google / Kakao ソーシャルログイン時に自動取得",
+      r2a:"お子さまのプロフィール", r2b:"ニックネーム、4桁 PIN(端末上でハッシュ化)、学年", r2c:"保護者が入力",
+      r3a:"学習データ", r3b:"生成された問題、回答、点数、弱点統計、言語設定", r3c:"アプリ利用中に自動生成",
+      r4a:"決済情報", r4b:"サブスク種別、購入トークン、取引 ID、購入/期限日", r4c:"Google Play 課金で処理(カード番号は取得しません)",
+      r5a:"技術情報", r5b:"Firebase インストール ID、クラッシュログ、AdMob 広告識別子", r5c:"初回起動/広告リクエスト時に自動取得",
+      note:"※ 健康、生体、精密な位置情報などの機微情報は収集しません。"
+    },
+    s2: { h:"2. 利用目的",
+      i1:"保護者/お子さまアカウントの作成・管理",
+      i2:"算数問題の生成、採点、弱点分析",
+      i3:"サブスク管理および課金処理",
+      i4:"不具合診断・品質改善、および無料プラン保護者への非パーソナライズ広告表示",
+      i5:"サービス通知および法令上の告知"
+    },
+    s3: { h:"3. 法的根拠(EEA / UK 利用者)",
+      body:"GDPR 第6条に基づき、(a) 契約の履行、(b) 任意機能(分析など)への同意、(c) サービスの安全と品質に関する正当な利益、(d) 法令の遵守を根拠に個人データを処理します。"
+    },
+    s4: { h:"4. 保存期間",
+      c1:"項目", c2:"保存期間",
+      r1a:"アカウント・学習データ", r1b:"退会申請から30日以内に削除",
+      r2a:"決済記録", r2b:"関連法令に基づき最長5年",
+      r3a:"クラッシュ・診断ログ", r3b:"最長90日"
+    },
+    s5: { h:"5. 委託先",
+      c1:"受託者", c2:"委託業務", c3:"地域",
+      r1b:"認証、データベース、サーバー関数、クラッシュレポート",
+      r2b:"アプリ内課金およびサブスク処理",
+      r3b:"無料プラン利用者向け非パーソナライズ広告",
+      r4a:"Kakao 株式会社(韓国のみ)",
+      r4b:"Kakao ソーシャルログイン(韓国国内のみで提供)",
+      r4c:"大韓民国",
+      note:"※ 各受託者はデータ処理契約に従い、上記の目的以外で個人データを処理しません。"
+    },
+    s6: { h:"6. 国境を越えるデータ移転",
+      body:"データは Google/Firebase のサーバー(主に米国)で保存・処理される場合があります。EEA/UK 利用者については、EU 標準契約条項(SCC)および Google Cloud の移転枠組みにより十分な保護を確保します。"
+    },
+    s7: { h:"7. 児童のプライバシー(COPPA / GDPR-K)",
+      body:"本サービスは小学生のお子さま向けで、保護者アカウントのもとで利用されます。各国のデジタル同意年齢(米国13歳、EEA 13~16歳、韓国14歳)未満の児童から、検証可能な保護者同意なしに個人情報を直接収集しません。",
+      i1:"お子さまプロフィールは保護者が作成・管理し、児童が直接個人情報を入力することはありません。",
+      i2:"児童に対してパーソナライズ/行動ターゲティング広告を配信しません。",
+      i3:"無料プランの広告は年齢に適した非パーソナライズ広告です(AdMob 児童向け設定を有効化)。",
+      i4:"保護者はお問い合わせメールからいつでもお子さまデータの閲覧・訂正・削除を求めることができます。"
+    },
+    s8: { h:"8. 利用者の権利",
+      lead:"PIPA / GDPR / UK GDPR / LGPD / CCPA に基づき、次の権利を有します:",
+      i1:"個人データの開示・複製の請求",
+      i2:"不正確なデータの訂正",
+      i3:"削除(忘れられる権利)",
+      i4:"処理の制限・異議申立て",
+      i5:"データポータビリティ",
+      i6:"同意の撤回、および監督当局への苦情申立て",
+      how:"権利行使は alsntud1004@gmail.com までご連絡ください。30日以内に対応します。アプリ内退会またはアカウント削除ページからも削除可能です。"
+    },
+    s9: { h:"9. カリフォルニア居住者(CCPA / CPRA)",
+      body:"カリフォルニア居住者は、収集された個人情報の区分・内容を知る権利、削除を求める権利、訂正を求める権利、機微情報の利用を制限する権利を有します。区分は第1条をご参照ください。"
+    },
+    s10:{ h:"10. 個人情報の販売は行いません",
+      body:"CCPA/CPRA で定義される「販売」または「共有」に該当する行為は行っておらず、クロスコンテキスト行動ターゲティング広告目的で情報を共有しません。児童のデータは決して販売・共有されません。"
+    },
+    s11:{ h:"11. 安全対策",
+      body:"Firebase 認証、Firestore セキュリティルール、通信時の TLS 1.2+ 暗号化を適用し、本番システムへのアクセスを制限・監査しています。合理的な対策を講じていますが、100%の安全性は保証できません。"
+    },
+    s12:{ h:"12. 本ポリシーの変更",
+      body:"法令やサービス変更に応じて本ポリシーを改定することがあります。重要な変更は、効力発生の7日前(法令上必要な場合は30日前)までにアプリ内で通知します。冒頭の「最終更新日」が現行版を示します。"
+    },
+    s13:{ h:"13. お問い合わせ / データ保護責任者",
+      body:"プライバシーに関するお問い合わせや権利行使は下記までご連絡ください。"
+    }
+  },
+
+  zh_cn: {
+    title: "隐私政策",
+    labels: { lang:"语言", effective:"生效日期:", updated:"最后更新:", appName:"应用名称:", package:"包名:", contact:"联系方式:", delete:"账号注销" },
+    values: { appName:"我家孩子定制算术" },
+    intro: "本应用(以下简称\"本服务\")重视用户隐私,遵守韩国《个人信息保护法》、欧盟/英国 GDPR、美国 COPPA 及 CCPA/CPRA、巴西 LGPD 以及 Google Play 相关政策。",
+    s1: { h:"1. 收集的信息",
+      c1:"类别", c2:"项目", c3:"收集方式",
+      r1a:"账号信息", r1b:"电子邮箱、显示名称、头像 URL、认证 UID", r1c:"通过 Google / Kakao 社交登录自动采集",
+      r2a:"儿童档案", r2b:"昵称、4 位 PIN(本地哈希)、年级", r2c:"由家长输入",
+      r3a:"学习数据", r3b:"生成的题目、答题、成绩、薄弱分析、语言偏好", r3c:"使用过程中自动生成",
+      r4a:"支付信息", r4b:"订阅等级、购买令牌、交易 ID、购买/到期日期", r4c:"由 Google Play 处理(不收集卡号)",
+      r5a:"技术信息", r5b:"Firebase 安装 ID、崩溃日志、AdMob 广告标识", r5c:"首次启动/广告请求时自动采集",
+      note:"※ 我们不收集健康、生物识别、精准位置等敏感类别信息。"
+    },
+    s2: { h:"2. 处理目的",
+      i1:"创建与管理家长/学生账号",
+      i2:"生成算术题目、批改并分析薄弱环节",
+      i3:"管理订阅与支付",
+      i4:"故障诊断、质量改进,以及向免费计划家长账号展示非个性化广告",
+      i5:"发送服务公告及法定告知"
+    },
+    s3: { h:"3. 法律依据(欧盟/英国用户)",
+      body:"依据 GDPR 第6条:(a) 履行服务合同;(b) 对可选功能(如分析)的同意;(c) 我方在服务安全与改进方面的正当利益;(d) 履行法定义务。"
+    },
+    s4: { h:"4. 保留期限",
+      c1:"项目", c2:"期限",
+      r1a:"账号和学习数据", r1b:"自注销申请起 30 日内删除",
+      r2a:"支付记录", r2b:"根据适用法律最长保留 5 年",
+      r3a:"崩溃/诊断日志", r3b:"最长 90 天"
+    },
+    s5: { h:"5. 受托处理方",
+      c1:"受托方", c2:"业务", c3:"地区",
+      r1b:"身份验证、数据库、云函数、崩溃报告",
+      r2b:"应用内支付与订阅处理",
+      r3b:"向免费用户展示非个性化广告",
+      r4a:"Kakao 公司(仅限韩国)",
+      r4b:"Kakao 社交登录(仅在大韩民国境内提供)",
+      r4c:"大韩民国",
+      note:"※ 各受托方依据数据处理协议仅为上述目的处理数据。"
+    },
+    s6: { h:"6. 数据跨境传输",
+      body:"您的数据可能在 Google/Firebase 位于您所在国以外(主要是美国)的服务器上存储与处理。对欧盟/英国用户,我们通过欧盟标准合同条款(SCC)及 Google Cloud 传输框架确保充分保护水平。"
+    },
+    s7: { h:"7. 儿童隐私(COPPA / GDPR-K)",
+      body:"本服务面向小学生,由家长账号管理。对未达到各地数字同意年龄(美国 13 岁;欧盟 13–16 岁;韩国 14 岁)的儿童,我们不会在缺少可验证家长同意的情况下直接收集其个人信息。",
+      i1:"儿童档案由家长创建并管理,儿童不会直接提交个人信息。",
+      i2:"我们不向儿童投放个性化/行为广告。",
+      i3:"向免费用户展示的广告为年龄适宜的非个性化广告(已启用 AdMob 儿童相关设置)。",
+      i4:"家长可随时通过下方邮箱查阅、更正或删除儿童数据。"
+    },
+    s8: { h:"8. 您的权利",
+      lead:"根据 PIPA / GDPR / UK GDPR / LGPD / CCPA,您享有:",
+      i1:"访问并获取个人数据副本",
+      i2:"更正不准确信息",
+      i3:"删除(被遗忘权)",
+      i4:"限制或反对处理",
+      i5:"数据可携带",
+      i6:"撤回同意并向监管机构投诉",
+      how:"如需行使权利,请发送邮件至 alsntud1004@gmail.com,我们将在 30 日内回复。也可通过应用内退出或账号注销页面删除账号。"
+    },
+    s9: { h:"9. 加州居民(CCPA / CPRA)",
+      body:"加州居民有权了解我们收集的个人信息类别与具体内容、要求删除、要求更正以及限制敏感个人信息的使用。相关类别见第 1 条。"
+    },
+    s10:{ h:"10. 我们不出售个人信息",
+      body:"我们不会实施 CCPA/CPRA 定义下的\"出售\"或\"共享\"行为,也不会为跨情境行为广告目的共享信息。儿童数据绝不用于出售或广告共享。"
+    },
+    s11:{ h:"11. 安全措施",
+      body:"我们采用 Firebase 身份验证、Firestore 安全规则以及 TLS 1.2+ 传输加密,并对生产系统访问进行控制与审计。尽管采取合理措施,仍无法保证绝对安全。"
+    },
+    s12:{ h:"12. 政策变更",
+      body:"我们可能根据法律或业务变化修订本政策,重大变更将在生效前至少 7 日(法律要求时 30 日)通过应用内公告告知。顶部的\"最后更新\"日期代表当前版本。"
+    },
+    s13:{ h:"13. 联系方式 / 数据保护负责人",
+      body:"如有隐私相关问题或权利行使请求,请联系:"
+    }
+  },
+
+  zh_tw: {
+    title: "隱私權政策",
+    labels: { lang:"語言", effective:"生效日期:", updated:"最後更新:", appName:"應用名稱:", package:"套件名稱:", contact:"聯絡方式:", delete:"帳號刪除" },
+    values: { appName:"我家孩子客製算術" },
+    intro: "本應用程式(以下稱「本服務」)重視您的隱私,遵守南韓《個人資料保護法》、歐盟/英國 GDPR、美國 COPPA 與 CCPA/CPRA、巴西 LGPD,以及 Google Play 相關政策。",
+    s1: { h:"1. 蒐集的資料",
+      c1:"類別", c2:"項目", c3:"蒐集方式",
+      r1a:"帳號資料", r1b:"電子郵件、顯示名稱、頭像 URL、認證 UID", r1c:"Google / Kakao 社交登入時自動取得",
+      r2a:"子女檔案", r2b:"暱稱、4 位 PIN(本機雜湊)、年級", r2c:"由家長輸入",
+      r3a:"學習資料", r3b:"產生的題目、答題、分數、弱點分析、語言偏好", r3c:"使用時自動產生",
+      r4a:"付款資訊", r4b:"訂閱等級、購買權杖、交易 ID、購買/到期日", r4c:"由 Google Play 處理(不蒐集卡號)",
+      r5a:"技術資料", r5b:"Firebase 安裝 ID、當機記錄、AdMob 廣告識別碼", r5c:"首次啟動/廣告請求時自動取得",
+      note:"※ 不蒐集健康、生物特徵、精確位置等特種資料。"
+    },
+    s2: { h:"2. 處理目的",
+      i1:"建立與管理家長/學生帳號",
+      i2:"產生算術題、批改並分析弱點",
+      i3:"管理訂閱與付款處理",
+      i4:"錯誤診斷與品質改善,並對免費方案家長帳號顯示非個人化廣告",
+      i5:"傳送服務公告與法定通知"
+    },
+    s3: { h:"3. 法律依據(EEA/UK 使用者)",
+      body:"依 GDPR 第6條:(a) 履行服務契約;(b) 對選用功能(如分析)之同意;(c) 服務安全與品質之正當利益;(d) 法律義務。"
+    },
+    s4: { h:"4. 保留期間",
+      c1:"項目", c2:"期間",
+      r1a:"帳號與學習資料", r1b:"自退會起 30 日內刪除",
+      r2a:"付款紀錄", r2b:"依法律要求最多 5 年",
+      r3a:"當機與診斷紀錄", r3b:"最多 90 天"
+    },
+    s5: { h:"5. 委外處理者",
+      c1:"受託方", c2:"業務", c3:"地區",
+      r1b:"身份驗證、資料庫、雲端函式、當機報告",
+      r2b:"應用內付款與訂閱處理",
+      r3b:"對免費方案使用者提供非個人化廣告",
+      r4a:"Kakao 公司(僅限韓國)",
+      r4b:"Kakao 社交登入(僅於大韓民國境內提供)",
+      r4c:"大韓民國",
+      note:"※ 各受託者依資料處理協議僅為上述目的處理資料。"
+    },
+    s6: { h:"6. 跨境資料傳輸",
+      body:"您的資料可能儲存與處理於 Google/Firebase 位於您所在國以外(主要在美國)的伺服器。對 EEA/UK 使用者,我們透過 EU 標準契約條款(SCC)及 Google Cloud 傳輸框架確保適足保護。"
+    },
+    s7: { h:"7. 兒童隱私(COPPA / GDPR-K)",
+      body:"本服務面向小學生,由家長帳號管理。對各地數位同意年齡(美國 13 歲;EEA 13–16 歲;韓國 14 歲)以下兒童,我們不會在缺乏可驗證家長同意下直接蒐集其個人資料。",
+      i1:"子女檔案由家長建立並管理,兒童不直接提交個人資料。",
+      i2:"我們不對兒童投放個人化/行為廣告。",
+      i3:"向免費使用者顯示的廣告為年齡適宜之非個人化廣告(啟用 AdMob 兒童設定)。",
+      i4:"家長可隨時透過下方電子郵件要求查閱、更正或刪除子女資料。"
+    },
+    s8: { h:"8. 您的權利",
+      lead:"依 PIPA / GDPR / UK GDPR / LGPD / CCPA,您享有:",
+      i1:"查閱並取得個人資料副本",
+      i2:"更正不正確的資料",
+      i3:"刪除(被遺忘權)",
+      i4:"限制與反對處理",
+      i5:"資料可攜權",
+      i6:"撤回同意並向監督機關提出申訴",
+      how:"請透過 alsntud1004@gmail.com 行使權利,我們將於 30 日內回覆。亦可透過應用內退會或帳號刪除頁面刪除。"
+    },
+    s9: { h:"9. 加州居民(CCPA / CPRA)",
+      body:"加州居民有權知悉我們蒐集的個人資料類別與內容、請求刪除、請求更正,以及限制敏感資料之使用。相關類別見第 1 條。"
+    },
+    s10:{ h:"10. 我們不出售個人資料",
+      body:"我們不從事 CCPA/CPRA 所定義的「出售」或「分享」,亦不因跨情境行為廣告目的分享資料。兒童資料絕不出售或分享。"
+    },
+    s11:{ h:"11. 安全措施",
+      body:"採用 Firebase 身份驗證、Firestore 安全規則、傳輸 TLS 1.2+ 加密,並對正式環境存取加以限制與稽核。雖採合理措施,仍無法保證絕對安全。"
+    },
+    s12:{ h:"12. 政策變更",
+      body:"本政策可能因法律或業務變動而修訂。重大變更將於生效前至少 7 日(法律要求時 30 日)在應用內公告。頂端「最後更新」日期代表目前版本。"
+    },
+    s13:{ h:"13. 聯絡資訊 / 資料保護負責人",
+      body:"關於隱私或權利行使,請聯絡:"
+    }
+  },
+
+  es: {
+    title: "Política de Privacidad",
+    labels: { lang:"Idioma", effective:"Vigencia:", updated:"Última actualización:", appName:"App:", package:"Paquete:", contact:"Contacto:", delete:"Eliminar cuenta" },
+    values: { appName:"Matemáticas Personalizadas para mi Hijo" },
+    intro: "Esta aplicación (el «Servicio») respeta su privacidad. Esta Política explica qué información recopilamos, cómo la usamos y sus derechos. Cumple con la PIPA de Corea, el RGPD de la UE/RU, la CCPA/CPRA de California, la COPPA de EE. UU., la LGPD de Brasil y las políticas de Google Play.",
+    s1: { h:"1. Información que recopilamos",
+      c1:"Categoría", c2:"Elementos", c3:"Método de recopilación",
+      r1a:"Cuenta", r1b:"Correo, nombre, URL de foto de perfil, UID de autenticación", r1c:"Automático al iniciar sesión con Google / Kakao",
+      r2a:"Perfil del menor", r2b:"Apodo, PIN de 4 dígitos (cifrado en el dispositivo), grado", r2c:"Introducido por el padre/tutor",
+      r3a:"Datos de aprendizaje", r3b:"Problemas generados, respuestas, puntuaciones, análisis de puntos débiles, idioma", r3c:"Generado al usar la app",
+      r4a:"Facturación", r4b:"Nivel de suscripción, token de compra, ID de transacción, fechas de compra/expiración", r4c:"Vía Google Play Billing (no recibimos números de tarjeta)",
+      r5a:"Técnicos", r5b:"ID de instalación de Firebase, registros de fallos, identificadores de AdMob", r5c:"Automáticos al primer inicio / solicitudes de anuncios",
+      note:"No recopilamos categorías sensibles (salud, biometría, ubicación precisa)."
+    },
+    s2: { h:"2. Finalidades del tratamiento",
+      i1:"Crear y gestionar cuentas de padre/alumno",
+      i2:"Generar problemas de matemáticas, calificarlos y analizar puntos débiles",
+      i3:"Gestionar suscripciones y procesar pagos",
+      i4:"Diagnóstico de errores, mejora de calidad y anuncios no personalizados a cuentas del plan gratuito (padres)",
+      i5:"Avisos del servicio y notificaciones legales"
+    },
+    s3: { h:"3. Base jurídica (usuarios EEE / RU)",
+      body:"Conforme al art. 6 RGPD: (a) ejecución del contrato; (b) consentimiento para funciones opcionales (analítica, etc.); (c) intereses legítimos en seguridad y mejora del servicio; (d) cumplimiento de obligaciones legales."
+    },
+    s4: { h:"4. Plazo de conservación",
+      c1:"Elemento", c2:"Plazo",
+      r1a:"Cuenta y datos de aprendizaje", r1b:"Se eliminan en un plazo de 30 días tras la baja",
+      r2a:"Registros de pago", r2b:"Hasta 5 años según la ley aplicable",
+      r3a:"Registros de fallos/diagnóstico", r3b:"Hasta 90 días"
+    },
+    s5: { h:"5. Encargados del tratamiento",
+      c1:"Encargado", c2:"Finalidad", c3:"Región",
+      r1b:"Autenticación, base de datos, funciones en la nube, informes de fallos",
+      r2b:"Compras y suscripciones dentro de la app",
+      r3b:"Publicidad no personalizada para usuarios del plan gratuito",
+      r4a:"Kakao Corp. (solo Corea)",
+      r4b:"Inicio de sesión social Kakao (solo en la República de Corea)",
+      r4c:"República de Corea",
+      note:"Cada encargado actúa bajo un contrato de tratamiento y solo para las finalidades indicadas."
+    },
+    s6: { h:"6. Transferencias internacionales de datos",
+      body:"Sus datos pueden almacenarse y procesarse en servidores de Google/Firebase situados fuera de su país (principalmente en EE. UU.). Para usuarios del EEE/RU, aplicamos las Cláusulas Contractuales Tipo de la UE (SCC) y el marco de transferencias de Google Cloud."
+    },
+    s7: { h:"7. Privacidad infantil (COPPA / GDPR-K)",
+      body:"El Servicio está diseñado para niños de primaria y se usa bajo una cuenta de padre/tutor. No recopilamos conscientemente datos personales directamente de menores de la edad de consentimiento digital aplicable (13 en EE. UU.; 13–16 en el EEE; 14 en Corea) sin consentimiento parental verificable.",
+      i1:"El padre crea y controla el perfil del menor; los niños no envían datos personales directamente.",
+      i2:"No servimos publicidad personalizada/comportamental a menores.",
+      i3:"Los anuncios del plan gratuito son no personalizados y apropiados para la edad (configuración infantil de AdMob activa).",
+      i4:"Los padres pueden revisar, corregir o eliminar los datos de su hijo en cualquier momento a través del correo de contacto."
+    },
+    s8: { h:"8. Sus derechos",
+      lead:"Según su jurisdicción (PIPA / RGPD / UK GDPR / LGPD / CCPA):",
+      i1:"Acceso y copia de sus datos personales",
+      i2:"Rectificación de datos inexactos",
+      i3:"Supresión («derecho al olvido»)",
+      i4:"Limitación y oposición al tratamiento",
+      i5:"Portabilidad de los datos",
+      i6:"Retirada del consentimiento y reclamación ante la autoridad de control",
+      how:"Para ejercer estos derechos, escriba a alsntud1004@gmail.com. Responderemos en un plazo de 30 días. También puede eliminar su cuenta dentro de la app o a través de la página de Eliminación de Cuenta."
+    },
+    s9: { h:"9. Residentes de California (CCPA / CPRA)",
+      body:"Los residentes de California tienen derecho a conocer las categorías y piezas específicas de información personal recopilada, a eliminarla, a corregir inexactitudes y a limitar el uso de información personal sensible. Las categorías recopiladas figuran en la Sección 1."
+    },
+    s10:{ h:"10. No vendemos información personal",
+      body:"No vendemos ni compartimos información personal según la CCPA/CPRA, ni la compartimos para publicidad comportamental entre contextos. Los datos de menores nunca se venden ni se comparten con fines publicitarios."
+    },
+    s11:{ h:"11. Seguridad",
+      body:"Usamos autenticación de Firebase, reglas de seguridad de Firestore y cifrado TLS 1.2+ en tránsito. El acceso a sistemas de producción está restringido y auditado. Ningún método es 100% seguro."
+    },
+    s12:{ h:"12. Cambios en esta Política",
+      body:"Podemos actualizar esta Política por cambios legales o de prácticas. Los cambios materiales se notificarán en la app al menos 7 días antes de su entrada en vigor (30 días cuando la ley lo exija). La fecha de «Última actualización» refleja la versión actual."
+    },
+    s13:{ h:"13. Contacto / Responsable de protección de datos",
+      body:"Para preguntas de privacidad o ejercer sus derechos, contacte a:"
+    }
+  },
+
+  pt: {
+    title: "Política de Privacidade",
+    labels: { lang:"Idioma", effective:"Vigência:", updated:"Última atualização:", appName:"App:", package:"Pacote:", contact:"Contato:", delete:"Excluir conta" },
+    values: { appName:"Matemática Personalizada do Meu Filho" },
+    intro: "Este app (o «Serviço») respeita a sua privacidade. Esta Política descreve quais informações coletamos, como as utilizamos e seus direitos. Cumprimos a PIPA da Coreia, o GDPR (UE/RU), a CCPA/CPRA da Califórnia, a COPPA dos EUA, a LGPD do Brasil e as políticas do Google Play.",
+    s1: { h:"1. Informações que coletamos",
+      c1:"Categoria", c2:"Itens", c3:"Método de coleta",
+      r1a:"Conta", r1b:"E-mail, nome de exibição, URL da foto de perfil, UID de autenticação", r1c:"Automático no login social Google / Kakao",
+      r2a:"Perfil da criança", r2b:"Apelido, PIN de 4 dígitos (com hash no dispositivo), série", r2c:"Inserido pelo responsável",
+      r3a:"Dados de aprendizagem", r3b:"Problemas gerados, respostas, notas, análise de dificuldades, idioma", r3c:"Gerados durante o uso",
+      r4a:"Cobrança", r4b:"Nível de assinatura, token de compra, ID da transação, datas de compra/expiração", r4c:"Via Google Play Billing (não recebemos números de cartão)",
+      r5a:"Técnicos", r5b:"ID de instalação do Firebase, logs de falhas, identificadores do AdMob", r5c:"Automáticos no primeiro início / solicitações de anúncio",
+      note:"Não coletamos categorias sensíveis (saúde, biometria, localização precisa)."
+    },
+    s2: { h:"2. Finalidades do tratamento",
+      i1:"Criar e gerenciar contas de responsável/aluno",
+      i2:"Gerar problemas, corrigir e analisar pontos fracos",
+      i3:"Gerenciar assinaturas e processar pagamentos",
+      i4:"Diagnóstico de erros, melhoria de qualidade e anúncios não personalizados para contas de responsáveis no plano grátis",
+      i5:"Avisos do serviço e notificações legais"
+    },
+    s3: { h:"3. Base legal (usuários EEE / RU)",
+      body:"Com base no art. 6 do GDPR: (a) execução do contrato; (b) consentimento para recursos opcionais; (c) interesses legítimos na segurança e melhoria; (d) cumprimento de obrigações legais."
+    },
+    s4: { h:"4. Período de retenção",
+      c1:"Item", c2:"Período",
+      r1a:"Conta e dados de aprendizagem", r1b:"Excluídos em até 30 dias após a solicitação de cancelamento",
+      r2a:"Registros de pagamento", r2b:"Até 5 anos conforme a lei aplicável",
+      r3a:"Logs de falhas/diagnóstico", r3b:"Até 90 dias"
+    },
+    s5: { h:"5. Operadores / Processadores",
+      c1:"Operador", c2:"Finalidade", c3:"Região",
+      r1b:"Autenticação, banco de dados, funções na nuvem, relatórios de falhas",
+      r2b:"Compras in-app e assinaturas",
+      r3b:"Publicidade não personalizada para usuários do plano grátis",
+      r4a:"Kakao Corp. (somente Coreia)",
+      r4b:"Login social Kakao (disponível apenas na República da Coreia)",
+      r4c:"República da Coreia",
+      note:"Cada operador atua sob contrato de tratamento apenas para as finalidades acima."
+    },
+    s6: { h:"6. Transferências internacionais",
+      body:"Seus dados podem ser armazenados e processados em servidores Google/Firebase fora do seu país (principalmente nos EUA). Para usuários do EEE/RU, usamos as Cláusulas Contratuais Padrão (SCC) da UE e o framework de transferência do Google Cloud."
+    },
+    s7: { h:"7. Privacidade de Crianças (COPPA / GDPR-K / LGPD Art. 14)",
+      body:"O Serviço é voltado a crianças do ensino fundamental, sob conta de um responsável. Não coletamos dados pessoais diretamente de crianças abaixo da idade de consentimento digital aplicável (13 anos EUA; 13–16 UE; 14 Coreia; consentimento específico e destacado dos pais no Brasil) sem consentimento parental verificável.",
+      i1:"O responsável cria e controla o perfil da criança; crianças não enviam dados diretamente.",
+      i2:"Não exibimos anúncios personalizados/comportamentais para crianças.",
+      i3:"Os anúncios no plano grátis são não personalizados e adequados à idade (configuração AdMob para crianças ativada).",
+      i4:"Os responsáveis podem acessar, corrigir ou excluir dados do filho a qualquer momento pelo e-mail de contato."
+    },
+    s8: { h:"8. Seus direitos",
+      lead:"Conforme sua jurisdição (PIPA / GDPR / UK GDPR / LGPD / CCPA), você tem:",
+      i1:"Acesso e cópia dos dados pessoais",
+      i2:"Correção de dados inexatos",
+      i3:"Exclusão («direito ao esquecimento»)",
+      i4:"Limitação e oposição ao tratamento",
+      i5:"Portabilidade",
+      i6:"Revogação do consentimento e reclamação à autoridade supervisora (ANPD no Brasil)",
+      how:"Para exercer seus direitos, envie e-mail para alsntud1004@gmail.com. Responderemos em até 30 dias. Também é possível excluir a conta no app ou pela página de Exclusão."
+    },
+    s9: { h:"9. Residentes da Califórnia (CCPA / CPRA)",
+      body:"Residentes da Califórnia têm direito de saber as categorias e itens específicos coletados, solicitar exclusão, corrigir imprecisões e limitar o uso de informações pessoais sensíveis. Categorias estão na Seção 1."
+    },
+    s10:{ h:"10. Não vendemos informações pessoais",
+      body:"Não vendemos nem compartilhamos informações pessoais conforme a CCPA/CPRA, nem as compartilhamos para publicidade comportamental entre contextos. Dados de crianças nunca são vendidos nem compartilhados para fins publicitários."
+    },
+    s11:{ h:"11. Segurança",
+      body:"Utilizamos Firebase Authentication, regras de segurança do Firestore e criptografia TLS 1.2+ em trânsito. O acesso aos sistemas de produção é restrito e auditado. Nenhum método é 100% seguro."
+    },
+    s12:{ h:"12. Alterações desta Política",
+      body:"Podemos atualizar esta Política por mudanças legais ou de práticas. Mudanças relevantes serão notificadas no app com pelo menos 7 dias de antecedência (30 dias se a lei exigir). A data de «Última atualização» reflete a versão atual."
+    },
+    s13:{ h:"13. Contato / Encarregado (DPO)",
+      body:"Para questões de privacidade ou exercício de direitos, entre em contato:"
+    }
+  },
+
+  fr: {
+    title: "Politique de confidentialité",
+    labels: { lang:"Langue", effective:"En vigueur :", updated:"Dernière mise à jour :", appName:"Application :", package:"Paquet :", contact:"Contact :", delete:"Suppression de compte" },
+    values: { appName:"Maths Personnalisés pour mon Enfant" },
+    intro: "Cette application (le « Service ») respecte votre vie privée. Cette Politique explique quelles données nous collectons, comment nous les utilisons et vos droits. Elle est conforme à la PIPA coréenne, au RGPD UE/RU, au CCPA/CPRA de Californie, au COPPA des États-Unis, à la LGPD brésilienne et aux politiques de Google Play.",
+    s1: { h:"1. Informations collectées",
+      c1:"Catégorie", c2:"Éléments", c3:"Méthode de collecte",
+      r1a:"Compte", r1b:"E-mail, nom affiché, URL de photo de profil, UID d'authentification", r1c:"Automatiquement lors de la connexion Google / Kakao",
+      r2a:"Profil enfant", r2b:"Surnom, code PIN à 4 chiffres (haché localement), niveau scolaire", r2c:"Saisi par le parent/tuteur",
+      r3a:"Données d'apprentissage", r3b:"Problèmes générés, réponses, scores, analyse des faiblesses, langue", r3c:"Générées pendant l'utilisation",
+      r4a:"Facturation", r4b:"Formule d'abonnement, jeton d'achat, ID de transaction, dates d'achat/expiration", r4c:"Via Google Play Billing (aucun numéro de carte reçu)",
+      r5a:"Techniques", r5b:"ID d'installation Firebase, journaux de plantages, identifiants AdMob", r5c:"Automatiquement au premier lancement / requêtes publicitaires",
+      note:"Nous ne collectons pas de catégories sensibles (santé, biométrie, géolocalisation précise)."
+    },
+    s2: { h:"2. Finalités du traitement",
+      i1:"Créer et gérer les comptes parent/élève",
+      i2:"Générer des problèmes de maths, les corriger et analyser les faiblesses",
+      i3:"Gérer les abonnements et traiter les paiements",
+      i4:"Diagnostic des erreurs, amélioration et publicités non personnalisées pour les comptes parent en offre gratuite",
+      i5:"Notifications de service et informations légales"
+    },
+    s3: { h:"3. Base légale (utilisateurs EEE / RU)",
+      body:"Conformément à l'art. 6 RGPD : (a) exécution du contrat ; (b) consentement pour fonctions optionnelles ; (c) intérêts légitimes pour la sécurité et l'amélioration ; (d) respect d'obligations légales."
+    },
+    s4: { h:"4. Durée de conservation",
+      c1:"Élément", c2:"Durée",
+      r1a:"Compte et données d'apprentissage", r1b:"Supprimés sous 30 jours après la demande de suppression",
+      r2a:"Données de paiement", r2b:"Jusqu'à 5 ans selon la loi applicable",
+      r3a:"Journaux de plantages/diagnostic", r3b:"Jusqu'à 90 jours"
+    },
+    s5: { h:"5. Sous-traitants",
+      c1:"Sous-traitant", c2:"Finalité", c3:"Région",
+      r1b:"Authentification, base de données, fonctions cloud, rapports de plantage",
+      r2b:"Achats in-app et abonnements",
+      r3b:"Publicité non personnalisée pour les utilisateurs gratuits",
+      r4a:"Kakao Corp. (Corée uniquement)",
+      r4b:"Connexion sociale Kakao (proposée uniquement en République de Corée)",
+      r4c:"République de Corée",
+      note:"Chaque sous-traitant agit en vertu d'un contrat de traitement et uniquement pour les finalités ci-dessus."
+    },
+    s6: { h:"6. Transferts internationaux",
+      body:"Vos données peuvent être stockées et traitées sur des serveurs Google/Firebase situés hors de votre pays (principalement aux États-Unis). Pour les utilisateurs EEE/RU, nous appliquons les clauses contractuelles types de l'UE (CCT) et le cadre de transfert Google Cloud."
+    },
+    s7: { h:"7. Vie privée des enfants (COPPA / GDPR-K)",
+      body:"Le Service est destiné aux enfants de l'école primaire, utilisé via un compte parent. Nous ne collectons pas sciemment de données directement auprès d'enfants sous l'âge du consentement numérique applicable (13 ans aux É.-U. ; 13 à 16 ans dans l'EEE ; 14 ans en Corée) sans consentement parental vérifiable.",
+      i1:"Le parent crée et contrôle le profil enfant ; les enfants ne soumettent pas de données directement.",
+      i2:"Aucune publicité personnalisée/comportementale n'est diffusée aux enfants.",
+      i3:"Les publicités en offre gratuite sont non personnalisées et adaptées à l'âge (paramétrage AdMob enfants activé).",
+      i4:"Les parents peuvent consulter, corriger ou supprimer les données de leur enfant à tout moment via l'e-mail de contact."
+    },
+    s8: { h:"8. Vos droits",
+      lead:"Selon votre juridiction (PIPA / RGPD / UK GDPR / LGPD / CCPA) :",
+      i1:"Droit d'accès et de copie des données",
+      i2:"Droit de rectification",
+      i3:"Droit à l'effacement (« droit à l'oubli »)",
+      i4:"Droit à la limitation et à l'opposition",
+      i5:"Droit à la portabilité",
+      i6:"Droit de retirer le consentement et d'introduire une réclamation auprès d'une autorité de contrôle",
+      how:"Pour exercer vos droits, écrivez à alsntud1004@gmail.com. Nous répondrons sous 30 jours. Vous pouvez aussi supprimer votre compte depuis l'application ou la page de suppression."
+    },
+    s9: { h:"9. Résidents de Californie (CCPA / CPRA)",
+      body:"Les résidents californiens ont le droit de connaître les catégories et données personnelles précises collectées, de les supprimer, de les corriger et de limiter l'usage des informations sensibles. Les catégories figurent à la Section 1."
+    },
+    s10:{ h:"10. Nous ne vendons pas d'informations personnelles",
+      body:"Nous ne vendons ni ne partageons d'informations personnelles au sens du CCPA/CPRA, ni à des fins de publicité comportementale inter-contextes. Les données des enfants ne sont jamais vendues ni partagées à des fins publicitaires."
+    },
+    s11:{ h:"11. Sécurité",
+      body:"Nous utilisons Firebase Authentication, les règles de sécurité Firestore et le chiffrement TLS 1.2+ en transit. L'accès aux systèmes de production est restreint et audité. Aucune méthode n'est sûre à 100 %."
+    },
+    s12:{ h:"12. Modifications de la Politique",
+      body:"Cette Politique peut être mise à jour en cas d'évolution légale ou de nos pratiques. Les modifications importantes seront notifiées dans l'application au moins 7 jours avant leur prise d'effet (30 jours si la loi l'exige). La date de « Dernière mise à jour » indique la version actuelle."
+    },
+    s13:{ h:"13. Contact / Délégué à la protection des données",
+      body:"Pour toute question relative à la vie privée ou pour exercer vos droits :"
+    }
+  },
+
+  de: {
+    title: "Datenschutzerklärung",
+    labels: { lang:"Sprache", effective:"Gültig ab:", updated:"Zuletzt aktualisiert:", appName:"App:", package:"Paket:", contact:"Kontakt:", delete:"Konto löschen" },
+    values: { appName:"Individuelles Rechnen für mein Kind" },
+    intro: "Diese App (der „Dienst") respektiert Ihre Privatsphäre. Diese Richtlinie erläutert, welche Daten wir erheben, wie wir sie nutzen und welche Rechte Sie haben. Sie entspricht der koreanischen PIPA, der EU-/UK-DSGVO, dem kalifornischen CCPA/CPRA, dem US-COPPA, der brasilianischen LGPD und den Google-Play-Richtlinien.",
+    s1: { h:"1. Erhobene Daten",
+      c1:"Kategorie", c2:"Datenarten", c3:"Erhebung",
+      r1a:"Konto", r1b:"E-Mail, Anzeigename, Profilbild-URL, Auth-UID", r1c:"Automatisch beim Google-/Kakao-Social-Login",
+      r2a:"Kinderprofil", r2b:"Spitzname, 4-stellige PIN (lokal gehasht), Klassenstufe", r2c:"Durch die Erziehungsberechtigten eingegeben",
+      r3a:"Lerndaten", r3b:"Erzeugte Aufgaben, Antworten, Ergebnisse, Schwächenanalyse, Sprache", r3c:"Entstehen bei der Nutzung",
+      r4a:"Abrechnung", r4b:"Abo-Stufe, Kauf-Token, Transaktions-ID, Kauf-/Ablaufdatum", r4c:"Über Google Play Billing (keine Kartennummern)",
+      r5a:"Technisch", r5b:"Firebase-Installations-ID, Absturzberichte, AdMob-Werbe-IDs", r5c:"Beim ersten Start / bei Anzeigenanfragen",
+      note:"Sensible Kategorien (Gesundheit, Biometrie, präzise Standorte) werden nicht erhoben."
+    },
+    s2: { h:"2. Zwecke der Verarbeitung",
+      i1:"Erstellen und Verwalten von Eltern-/Schülerkonten",
+      i2:"Erzeugen von Rechenaufgaben, Bewerten und Schwächenanalyse",
+      i3:"Abo-Verwaltung und Zahlungsabwicklung",
+      i4:"Fehleranalyse, Qualitätsverbesserung und nicht personalisierte Werbung an Elternkonten im Gratistarif",
+      i5:"Service-Mitteilungen und gesetzlich vorgeschriebene Hinweise"
+    },
+    s3: { h:"3. Rechtsgrundlage (EWR/UK-Nutzer)",
+      body:"Gemäß Art. 6 DSGVO: (a) Vertragserfüllung; (b) Einwilligung für optionale Funktionen; (c) berechtigte Interessen an Sicherheit und Verbesserung; (d) rechtliche Verpflichtungen."
+    },
+    s4: { h:"4. Speicherdauer",
+      c1:"Datenart", c2:"Dauer",
+      r1a:"Konto- und Lerndaten", r1b:"Löschung innerhalb von 30 Tagen nach Kündigung",
+      r2a:"Zahlungsdaten", r2b:"Bis zu 5 Jahre nach geltendem Recht",
+      r3a:"Absturz-/Diagnosedaten", r3b:"Bis zu 90 Tage"
+    },
+    s5: { h:"5. Auftragsverarbeiter",
+      c1:"Auftragsverarbeiter", c2:"Zweck", c3:"Region",
+      r1b:"Authentifizierung, Datenbank, Cloud Functions, Absturzberichte",
+      r2b:"In-App-Käufe und Abos",
+      r3b:"Nicht personalisierte Werbung für Nutzer des Gratistarifs",
+      r4a:"Kakao Corp. (nur Korea)",
+      r4b:"Kakao Social Login (nur in der Republik Korea angeboten)",
+      r4c:"Republik Korea",
+      note:"Jeder Auftragsverarbeiter handelt auf Grundlage eines AV-Vertrags ausschließlich für die oben genannten Zwecke."
+    },
+    s6: { h:"6. Internationale Datenübermittlung",
+      body:"Ihre Daten können auf Google-/Firebase-Servern außerhalb Ihres Landes (überwiegend USA) gespeichert und verarbeitet werden. Für Nutzer im EWR/UK stützen wir uns auf die EU-Standardvertragsklauseln (SCC) und das Übermittlungsframework von Google Cloud."
+    },
+    s7: { h:"7. Datenschutz für Kinder (COPPA / DSGVO-K)",
+      body:"Der Dienst richtet sich an Grundschulkinder und wird über ein Elternkonto genutzt. Wir erheben wissentlich keine personenbezogenen Daten direkt von Kindern unter dem geltenden Mindestalter für die digitale Einwilligung (USA 13; EWR 13–16; Korea 14) ohne überprüfbare elterliche Einwilligung.",
+      i1:"Eltern erstellen und verwalten das Kinderprofil; Kinder übermitteln keine Daten direkt.",
+      i2:"Kindern werden keine personalisierten/verhaltensbasierten Anzeigen ausgespielt.",
+      i3:"Im Gratistarif werden ausschließlich nicht personalisierte, altersgerechte Anzeigen gezeigt (AdMob-Kindereinstellungen aktiv).",
+      i4:"Eltern können die Daten ihres Kindes jederzeit über die Kontakt-E-Mail einsehen, berichtigen oder löschen lassen."
+    },
+    s8: { h:"8. Ihre Rechte",
+      lead:"Je nach Rechtsordnung (PIPA / DSGVO / UK GDPR / LGPD / CCPA) haben Sie folgende Rechte:",
+      i1:"Auskunft und Kopie",
+      i2:"Berichtigung unrichtiger Daten",
+      i3:"Löschung („Recht auf Vergessenwerden")",
+      i4:"Einschränkung und Widerspruch",
+      i5:"Datenübertragbarkeit",
+      i6:"Widerruf der Einwilligung und Beschwerde bei einer Aufsichtsbehörde",
+      how:"Zur Ausübung Ihrer Rechte wenden Sie sich an alsntud1004@gmail.com; wir antworten innerhalb von 30 Tagen. Sie können Ihr Konto auch in der App oder über die Seite zur Kontolöschung entfernen."
+    },
+    s9: { h:"9. Einwohner Kaliforniens (CCPA / CPRA)",
+      body:"Kalifornische Einwohner haben das Recht, die Kategorien und konkreten erhobenen Daten zu erfahren, sie löschen und berichtigen zu lassen sowie die Nutzung sensibler Daten einzuschränken. Die Kategorien finden sich in Abschnitt 1."
+    },
+    s10:{ h:"10. Kein Verkauf personenbezogener Daten",
+      body:"Wir verkaufen oder teilen keine personenbezogenen Daten im Sinne des CCPA/CPRA und geben keine Daten zu kontextübergreifender Verhaltenswerbung weiter. Kinderdaten werden niemals verkauft oder für Werbung geteilt."
+    },
+    s11:{ h:"11. Sicherheit",
+      body:"Wir nutzen Firebase Authentication, Firestore-Sicherheitsregeln und TLS 1.2+ auf dem Übertragungsweg. Der Zugriff auf Produktivsysteme ist begrenzt und protokolliert. Eine 100 %ige Sicherheit kann nicht garantiert werden."
+    },
+    s12:{ h:"12. Änderungen dieser Richtlinie",
+      body:"Bei Änderungen der Rechtslage oder unserer Praxis aktualisieren wir diese Richtlinie. Wesentliche Änderungen werden mindestens 7 Tage (bzw. 30 Tage, wo gesetzlich gefordert) vor Inkrafttreten in der App angekündigt. Das Datum „Zuletzt aktualisiert" zeigt die aktuelle Version."
+    },
+    s13:{ h:"13. Kontakt / Datenschutzbeauftragter",
+      body:"Für Datenschutzfragen oder die Ausübung Ihrer Rechte wenden Sie sich an:"
+    }
+  },
+
+  ru: {
+    title: "Политика конфиденциальности",
+    labels: { lang:"Язык", effective:"Дата вступления:", updated:"Последнее обновление:", appName:"Приложение:", package:"Пакет:", contact:"Контакт:", delete:"Удаление аккаунта" },
+    values: { appName:"Персональная математика для ребёнка" },
+    intro: "Настоящее приложение («Сервис») уважает вашу конфиденциальность. Политика описывает, какие данные мы собираем, как их используем и ваши права. Она соответствует PIPA Кореи, GDPR ЕС/Великобритании, CCPA/CPRA Калифорнии, COPPA США, LGPD Бразилии и политикам Google Play.",
+    s1: { h:"1. Собираемая информация",
+      c1:"Категория", c2:"Данные", c3:"Способ сбора",
+      r1a:"Аккаунт", r1b:"Эл. почта, отображаемое имя, URL фото профиля, UID авторизации", r1c:"Автоматически при входе через Google / Kakao",
+      r2a:"Профиль ребёнка", r2b:"Никнейм, 4-значный PIN (хеш локально), класс", r2c:"Вводится родителем",
+      r3a:"Учебные данные", r3b:"Сгенерированные задачи, ответы, результаты, анализ слабых тем, язык", r3c:"Создаются в процессе использования",
+      r4a:"Платёжные данные", r4b:"Уровень подписки, токен покупки, ID транзакции, даты покупки/истечения", r4c:"Через Google Play Billing (номера карт не получаем)",
+      r5a:"Технические", r5b:"Firebase install ID, логи сбоев, рекламные ID AdMob", r5c:"Автоматически при первом запуске / запросах рекламы",
+      note:"Чувствительные категории (здоровье, биометрия, точное местоположение) не собираются."
+    },
+    s2: { h:"2. Цели обработки",
+      i1:"Создание и управление аккаунтами родителя/ученика",
+      i2:"Генерация задач, проверка и анализ слабых мест",
+      i3:"Управление подписками и обработка платежей",
+      i4:"Диагностика ошибок, улучшение качества и показ неперсонализированной рекламы родителям на бесплатном тарифе",
+      i5:"Служебные уведомления и обязательные по закону сообщения"
+    },
+    s3: { h:"3. Правовое основание (пользователи ЕЭЗ/Великобритании)",
+      body:"В соответствии со ст. 6 GDPR: (a) исполнение договора; (b) согласие на дополнительные функции; (c) законные интересы по безопасности и улучшению; (d) выполнение правовых обязанностей."
+    },
+    s4: { h:"4. Срок хранения",
+      c1:"Данные", c2:"Срок",
+      r1a:"Аккаунт и учебные данные", r1b:"Удаляются в течение 30 дней после запроса",
+      r2a:"Платёжные записи", r2b:"До 5 лет согласно применимому праву",
+      r3a:"Логи сбоев/диагностики", r3b:"До 90 дней"
+    },
+    s5: { h:"5. Обработчики",
+      c1:"Обработчик", c2:"Назначение", c3:"Регион",
+      r1b:"Аутентификация, БД, облачные функции, отчёты о сбоях",
+      r2b:"Внутренние покупки и подписки",
+      r3b:"Неперсонализированная реклама пользователям бесплатного тарифа",
+      r4a:"Kakao Corp. (только Корея)",
+      r4b:"Kakao социальный вход (только в Республике Корея)",
+      r4c:"Республика Корея",
+      note:"Каждый обработчик действует по договору обработки только для указанных целей."
+    },
+    s6: { h:"6. Международная передача данных",
+      body:"Ваши данные могут храниться и обрабатываться на серверах Google/Firebase вне вашей страны (преимущественно в США). Для пользователей ЕЭЗ/Великобритании применяются Стандартные договорные положения ЕС (SCC) и фреймворк передачи Google Cloud."
+    },
+    s7: { h:"7. Конфиденциальность детей (COPPA / GDPR-K)",
+      body:"Сервис рассчитан на детей начальной школы и используется под аккаунтом родителя. Мы не собираем сознательно персональные данные напрямую от детей, не достигших возраста цифрового согласия (13 лет в США; 13–16 в ЕЭЗ; 14 в Корее) без проверяемого согласия родителя.",
+      i1:"Профиль ребёнка создаёт и контролирует родитель; ребёнок не вводит персональные данные напрямую.",
+      i2:"Персонализированная/поведенческая реклама детям не показывается.",
+      i3:"Реклама на бесплатном тарифе — неперсонализированная, соответствующая возрасту (включены детские настройки AdMob).",
+      i4:"Родители могут запросить доступ, исправление или удаление данных ребёнка через контактную почту."
+    },
+    s8: { h:"8. Ваши права",
+      lead:"Согласно вашей юрисдикции (PIPA / GDPR / UK GDPR / LGPD / CCPA):",
+      i1:"Право на доступ и копию",
+      i2:"Право на исправление",
+      i3:"Право на удаление («право быть забытым»)",
+      i4:"Право на ограничение и возражение",
+      i5:"Право на переносимость",
+      i6:"Право отозвать согласие и подать жалобу в надзорный орган",
+      how:"Для реализации прав пишите на alsntud1004@gmail.com. Ответим в течение 30 дней. Также можно удалить аккаунт в приложении или через страницу удаления."
+    },
+    s9: { h:"9. Жители Калифорнии (CCPA / CPRA)",
+      body:"Жители Калифорнии имеют право знать категории и конкретные данные, удалять их, исправлять неточности и ограничивать использование чувствительных данных. Категории указаны в разделе 1."
+    },
+    s10:{ h:"10. Мы не продаём персональные данные",
+      body:"Мы не продаём и не передаём персональные данные по смыслу CCPA/CPRA и не используем их для кросс-контекстной поведенческой рекламы. Данные детей никогда не продаются и не передаются для рекламы."
+    },
+    s11:{ h:"11. Безопасность",
+      body:"Мы используем Firebase Authentication, правила безопасности Firestore и шифрование TLS 1.2+. Доступ к продакшену ограничен и аудируется. 100% безопасность невозможно гарантировать."
+    },
+    s12:{ h:"12. Изменения в политике",
+      body:"Мы можем обновлять политику при изменениях в законе или практике. Существенные изменения будут объявлены в приложении не менее чем за 7 дней (или 30 дней, если этого требует закон). Дата «Последнее обновление» отражает текущую версию."
+    },
+    s13:{ h:"13. Контакт / Ответственный за защиту данных",
+      body:"По вопросам конфиденциальности или реализации прав:"
+    }
+  },
+
+  th: {
+    title: "นโยบายความเป็นส่วนตัว",
+    labels: { lang:"ภาษา", effective:"มีผล:", updated:"อัปเดตล่าสุด:", appName:"แอป:", package:"แพ็กเกจ:", contact:"ติดต่อ:", delete:"ลบบัญชี" },
+    values: { appName:"คณิตเฉพาะทางสำหรับลูก" },
+    intro: "แอปนี้ (\"บริการ\") เคารพความเป็นส่วนตัวของคุณ นโยบายนี้อธิบายว่าเราเก็บข้อมูลใด ใช้อย่างไร และสิทธิของคุณ สอดคล้องกับ PIPA เกาหลี GDPR ของ EU/UK, CCPA/CPRA แคลิฟอร์เนีย, COPPA สหรัฐฯ, LGPD บราซิล และนโยบาย Google Play",
+    s1: { h:"1. ข้อมูลที่เก็บรวบรวม",
+      c1:"ประเภท", c2:"รายการ", c3:"วิธีการเก็บ",
+      r1a:"บัญชี", r1b:"อีเมล ชื่อที่แสดง URL รูปโปรไฟล์ UID การยืนยันตัวตน", r1c:"เก็บอัตโนมัติเมื่อเข้าสู่ระบบ Google / Kakao",
+      r2a:"โปรไฟล์เด็ก", r2b:"ชื่อเล่น PIN 4 หลัก (แฮชในเครื่อง) ระดับชั้น", r2c:"ผู้ปกครองเป็นผู้กรอก",
+      r3a:"ข้อมูลการเรียน", r3b:"โจทย์ที่สร้าง คำตอบ คะแนน วิเคราะห์จุดอ่อน ภาษา", r3c:"สร้างขึ้นระหว่างใช้งาน",
+      r4a:"การชำระเงิน", r4b:"ระดับสมัครสมาชิก โทเคนการซื้อ รหัสรายการ วันที่ซื้อ/หมดอายุ", r4c:"ผ่าน Google Play Billing (ไม่รับหมายเลขบัตร)",
+      r5a:"ทางเทคนิค", r5b:"Firebase install ID บันทึกข้อผิดพลาด ตัวระบุโฆษณา AdMob", r5c:"อัตโนมัติเมื่อเปิดครั้งแรก / ส่งคำขอโฆษณา",
+      note:"ไม่มีการเก็บข้อมูลอ่อนไหว (สุขภาพ ไบโอเมตริก ตำแหน่งแม่นยำ)"
+    },
+    s2: { h:"2. วัตถุประสงค์การใช้",
+      i1:"สร้างและจัดการบัญชีผู้ปกครอง/นักเรียน",
+      i2:"สร้างโจทย์ ตรวจ และวิเคราะห์จุดอ่อน",
+      i3:"จัดการสมัครสมาชิกและชำระเงิน",
+      i4:"วินิจฉัยข้อผิดพลาด ปรับปรุงคุณภาพ และแสดงโฆษณาไม่ปรับเฉพาะบุคคลแก่บัญชีผู้ปกครองแบบฟรี",
+      i5:"ประกาศบริการและประกาศตามกฎหมาย"
+    },
+    s3: { h:"3. ฐานทางกฎหมาย (ผู้ใช้ EEA/UK)",
+      body:"ตาม GDPR มาตรา 6: (a) ปฏิบัติตามสัญญา; (b) ความยินยอมสำหรับฟีเจอร์ทางเลือก; (c) ผลประโยชน์อันชอบธรรมด้านความปลอดภัย/การปรับปรุง; (d) ปฏิบัติตามกฎหมาย"
+    },
+    s4: { h:"4. ระยะเวลาเก็บ",
+      c1:"รายการ", c2:"ระยะเวลา",
+      r1a:"บัญชีและข้อมูลการเรียน", r1b:"ลบภายใน 30 วันหลังคำขอยกเลิก",
+      r2a:"ประวัติการชำระเงิน", r2b:"สูงสุด 5 ปีตามกฎหมาย",
+      r3a:"บันทึกข้อผิดพลาด/ไดแอ็กโนสติก", r3b:"สูงสุด 90 วัน"
+    },
+    s5: { h:"5. ผู้ประมวลผลข้อมูล",
+      c1:"ผู้รับมอบ", c2:"วัตถุประสงค์", c3:"พื้นที่",
+      r1b:"การพิสูจน์ตัวตน ฐานข้อมูล Cloud Functions รายงานข้อขัดข้อง",
+      r2b:"การซื้อในแอปและการสมัครสมาชิก",
+      r3b:"โฆษณาไม่ปรับเฉพาะบุคคลสำหรับผู้ใช้ฟรี",
+      r4a:"Kakao Corp. (เฉพาะเกาหลี)",
+      r4b:"เข้าสู่ระบบโซเชียล Kakao (ให้บริการเฉพาะในสาธารณรัฐเกาหลี)",
+      r4c:"สาธารณรัฐเกาหลี",
+      note:"ผู้รับมอบแต่ละรายดำเนินการภายใต้สัญญาประมวลผล และเพื่อวัตถุประสงค์ข้างต้นเท่านั้น"
+    },
+    s6: { h:"6. การส่งข้อมูลข้ามพรมแดน",
+      body:"ข้อมูลของคุณอาจถูกจัดเก็บและประมวลผลบนเซิร์ฟเวอร์ Google/Firebase นอกประเทศของคุณ (ส่วนใหญ่อยู่ในสหรัฐอเมริกา) สำหรับผู้ใช้ EEA/UK เราใช้ข้อกำหนดมาตรฐาน (SCC) ของ EU และกรอบการส่งข้อมูลของ Google Cloud"
+    },
+    s7: { h:"7. ความเป็นส่วนตัวของเด็ก (COPPA / GDPR-K)",
+      body:"บริการนี้ออกแบบสำหรับเด็กประถมใช้ภายใต้บัญชีผู้ปกครอง เราไม่เก็บข้อมูลส่วนบุคคลโดยตรงจากเด็กอายุต่ำกว่าเกณฑ์ความยินยอมทางดิจิทัล (สหรัฐ 13 ปี; EEA 13–16 ปี; เกาหลี 14 ปี) โดยไม่มีความยินยอมจากผู้ปกครองที่ตรวจสอบได้",
+      i1:"ผู้ปกครองสร้างและจัดการโปรไฟล์เด็ก เด็กไม่ส่งข้อมูลโดยตรง",
+      i2:"เราไม่แสดงโฆษณาปรับเฉพาะบุคคล/พฤติกรรมต่อเด็ก",
+      i3:"โฆษณาในแผนฟรีเป็นแบบไม่ปรับเฉพาะบุคคลและเหมาะสมกับวัย (เปิดการตั้งค่า AdMob สำหรับเด็ก)",
+      i4:"ผู้ปกครองสามารถขอเข้าถึง แก้ไข หรือลบข้อมูลของเด็กได้ตลอดเวลาผ่านอีเมลติดต่อ"
+    },
+    s8: { h:"8. สิทธิของคุณ",
+      lead:"ตามเขตอำนาจศาล (PIPA / GDPR / UK GDPR / LGPD / CCPA):",
+      i1:"สิทธิในการเข้าถึงและขอสำเนา",
+      i2:"สิทธิในการแก้ไขข้อมูล",
+      i3:"สิทธิให้ลบ (\"สิทธิที่จะถูกลืม\")",
+      i4:"สิทธิในการจำกัด/คัดค้านการประมวลผล",
+      i5:"สิทธิในการโอนย้ายข้อมูล",
+      i6:"สิทธิถอนความยินยอมและร้องเรียนต่อหน่วยงานกำกับดูแล",
+      how:"กรุณาอีเมลมาที่ alsntud1004@gmail.com เราจะตอบกลับภายใน 30 วัน คุณยังสามารถลบบัญชีในแอปหรือผ่านหน้า \"ลบบัญชี\" ได้"
+    },
+    s9: { h:"9. ผู้พำนักในแคลิฟอร์เนีย (CCPA / CPRA)",
+      body:"ผู้พำนักในแคลิฟอร์เนียมีสิทธิรู้ประเภทและรายการข้อมูลที่เก็บ ขอให้ลบ ขอแก้ไข และจำกัดการใช้ข้อมูลส่วนบุคคลอ่อนไหว ประเภทต่าง ๆ ระบุในข้อ 1"
+    },
+    s10:{ h:"10. เราไม่ขายข้อมูลส่วนบุคคล",
+      body:"เราไม่ขายหรือแชร์ข้อมูลส่วนบุคคลตามนิยาม CCPA/CPRA และไม่แชร์เพื่อการโฆษณาเชิงพฤติกรรมข้ามบริบท ข้อมูลของเด็กไม่มีการขายหรือแชร์เพื่อการโฆษณา"
+    },
+    s11:{ h:"11. ความปลอดภัย",
+      body:"ใช้ Firebase Authentication กฎความปลอดภัยของ Firestore และการเข้ารหัส TLS 1.2+ ระหว่างการรับส่ง เข้าถึงระบบโปรดักชันมีการควบคุมและตรวจสอบ แต่ไม่มีวิธีใดปลอดภัย 100%"
+    },
+    s12:{ h:"12. การเปลี่ยนแปลงนโยบาย",
+      body:"อาจปรับปรุงนโยบายเมื่อกฎหมายหรือแนวทางเปลี่ยน การเปลี่ยนแปลงสำคัญจะแจ้งในแอปล่วงหน้าอย่างน้อย 7 วัน (หรือ 30 วันหากกฎหมายกำหนด) วันที่ \"อัปเดตล่าสุด\" ด้านบนสะท้อนเวอร์ชันปัจจุบัน"
+    },
+    s13:{ h:"13. ติดต่อ / เจ้าหน้าที่คุ้มครองข้อมูล",
+      body:"สอบถามเรื่องความเป็นส่วนตัวหรือใช้สิทธิของคุณ:"
+    }
+  },
+
+  id: {
+    title: "Kebijakan Privasi",
+    labels: { lang:"Bahasa", effective:"Berlaku:", updated:"Terakhir diperbarui:", appName:"Aplikasi:", package:"Paket:", contact:"Kontak:", delete:"Hapus Akun" },
+    values: { appName:"Matematika Khusus untuk Anak Saya" },
+    intro: "Aplikasi ini (\"Layanan\") menghormati privasi Anda. Kebijakan ini menjelaskan data yang kami kumpulkan, cara penggunaannya, dan hak Anda. Sesuai PIPA Korea, GDPR UE/Inggris, CCPA/CPRA California, COPPA AS, LGPD Brasil, dan kebijakan Google Play.",
+    s1: { h:"1. Informasi yang Kami Kumpulkan",
+      c1:"Kategori", c2:"Item", c3:"Metode Pengumpulan",
+      r1a:"Akun", r1b:"Email, nama tampilan, URL foto profil, UID autentikasi", r1c:"Otomatis saat login sosial Google / Kakao",
+      r2a:"Profil anak", r2b:"Nama panggilan, PIN 4 digit (di-hash di perangkat), kelas", r2c:"Diisi oleh orang tua/wali",
+      r3a:"Data belajar", r3b:"Soal yang dibuat, jawaban, skor, analisis kelemahan, bahasa", r3c:"Dibuat saat menggunakan aplikasi",
+      r4a:"Pembayaran", r4b:"Level langganan, token pembelian, ID transaksi, tanggal beli/kedaluwarsa", r4c:"Melalui Google Play Billing (kami tidak menerima nomor kartu)",
+      r5a:"Teknis", r5b:"ID instalasi Firebase, log crash, identifier iklan AdMob", r5c:"Otomatis saat pertama kali dijalankan / permintaan iklan",
+      note:"Kami tidak mengumpulkan kategori sensitif (kesehatan, biometrik, lokasi presisi)."
+    },
+    s2: { h:"2. Tujuan Pemrosesan",
+      i1:"Membuat dan mengelola akun orang tua/siswa",
+      i2:"Membuat soal matematika, memeriksa dan menganalisis kelemahan",
+      i3:"Mengelola langganan dan memproses pembayaran",
+      i4:"Diagnosis error, peningkatan kualitas, dan iklan non-personalisasi untuk akun orang tua paket gratis",
+      i5:"Pemberitahuan layanan dan pemberitahuan wajib hukum"
+    },
+    s3: { h:"3. Dasar Hukum (pengguna EEA/UK)",
+      body:"Berdasarkan Pasal 6 GDPR: (a) pelaksanaan kontrak; (b) persetujuan untuk fitur opsional; (c) kepentingan sah untuk keamanan dan peningkatan; (d) kewajiban hukum."
+    },
+    s4: { h:"4. Jangka Waktu Penyimpanan",
+      c1:"Item", c2:"Jangka Waktu",
+      r1a:"Akun dan data belajar", r1b:"Dihapus dalam 30 hari setelah permintaan penutupan",
+      r2a:"Catatan pembayaran", r2b:"Hingga 5 tahun sesuai hukum yang berlaku",
+      r3a:"Log crash/diagnostik", r3b:"Hingga 90 hari"
+    },
+    s5: { h:"5. Pengolah Data",
+      c1:"Pengolah", c2:"Tujuan", c3:"Wilayah",
+      r1b:"Autentikasi, basis data, cloud functions, laporan crash",
+      r2b:"Pembelian dalam aplikasi dan langganan",
+      r3b:"Iklan non-personalisasi bagi pengguna paket gratis",
+      r4a:"Kakao Corp. (hanya Korea)",
+      r4b:"Login sosial Kakao (hanya tersedia di Republik Korea)",
+      r4c:"Republik Korea",
+      note:"Setiap pengolah bertindak berdasarkan perjanjian pemrosesan hanya untuk tujuan di atas."
+    },
+    s6: { h:"6. Transfer Data Lintas Negara",
+      body:"Data Anda dapat disimpan dan diproses di server Google/Firebase di luar negara Anda (terutama AS). Untuk pengguna EEA/UK, kami mengandalkan Klausul Kontrak Standar (SCC) UE dan kerangka transfer Google Cloud."
+    },
+    s7: { h:"7. Privasi Anak (COPPA / GDPR-K)",
+      body:"Layanan dirancang untuk anak SD di bawah akun orang tua/wali. Kami tidak secara sadar mengumpulkan data pribadi langsung dari anak di bawah usia persetujuan digital (13 AS; 13–16 EEA; 14 Korea) tanpa persetujuan orang tua yang dapat diverifikasi.",
+      i1:"Orang tua membuat dan mengelola profil anak; anak tidak mengirimkan data pribadi langsung.",
+      i2:"Kami tidak menayangkan iklan personalisasi/perilaku ke anak.",
+      i3:"Iklan di paket gratis bersifat non-personalisasi dan sesuai usia (pengaturan anak AdMob aktif).",
+      i4:"Orang tua dapat meninjau, mengoreksi, atau menghapus data anak kapan saja melalui email kontak."
+    },
+    s8: { h:"8. Hak Anda",
+      lead:"Berdasarkan yurisdiksi (PIPA / GDPR / UK GDPR / LGPD / CCPA):",
+      i1:"Hak akses dan salinan",
+      i2:"Hak perbaikan",
+      i3:"Hak penghapusan (\"right to be forgotten\")",
+      i4:"Hak pembatasan dan keberatan",
+      i5:"Hak portabilitas data",
+      i6:"Hak menarik persetujuan dan mengajukan keluhan ke otoritas pengawas",
+      how:"Untuk menggunakan hak Anda, email alsntud1004@gmail.com. Kami merespons dalam 30 hari. Anda juga dapat menghapus akun dari dalam aplikasi atau halaman Hapus Akun."
+    },
+    s9: { h:"9. Penduduk California (CCPA / CPRA)",
+      body:"Penduduk California berhak mengetahui kategori dan item spesifik yang dikumpulkan, meminta penghapusan, koreksi, dan membatasi penggunaan informasi pribadi sensitif. Kategori ada di Bagian 1."
+    },
+    s10:{ h:"10. Kami Tidak Menjual Informasi Pribadi",
+      body:"Kami tidak menjual atau membagikan informasi pribadi sebagaimana didefinisikan CCPA/CPRA, maupun berbagi untuk iklan perilaku lintas konteks. Data anak tidak pernah dijual atau dibagikan untuk tujuan iklan."
+    },
+    s11:{ h:"11. Keamanan",
+      body:"Kami menggunakan Firebase Authentication, aturan keamanan Firestore, dan enkripsi TLS 1.2+ saat transit. Akses sistem produksi dibatasi dan diaudit. Tidak ada metode yang 100% aman."
+    },
+    s12:{ h:"12. Perubahan Kebijakan",
+      body:"Kebijakan ini dapat diperbarui karena perubahan hukum atau praktik. Perubahan material akan diumumkan di aplikasi minimal 7 hari sebelum berlaku (30 hari jika diwajibkan hukum). Tanggal \"Terakhir diperbarui\" menunjukkan versi terbaru."
+    },
+    s13:{ h:"13. Kontak / Petugas Perlindungan Data",
+      body:"Untuk pertanyaan privasi atau menggunakan hak Anda, hubungi:"
+    }
+  },
+
+  vi: {
+    title: "Chính sách Bảo mật",
+    labels: { lang:"Ngôn ngữ", effective:"Hiệu lực:", updated:"Cập nhật mới nhất:", appName:"Ứng dụng:", package:"Gói:", contact:"Liên hệ:", delete:"Xóa tài khoản" },
+    values: { appName:"Toán cá nhân hóa cho con tôi" },
+    intro: "Ứng dụng này (\"Dịch vụ\") tôn trọng quyền riêng tư của bạn. Chính sách này mô tả dữ liệu chúng tôi thu thập, cách sử dụng và các quyền của bạn. Tuân thủ PIPA Hàn Quốc, GDPR EU/UK, CCPA/CPRA California, COPPA Hoa Kỳ, LGPD Brazil và chính sách Google Play.",
+    s1: { h:"1. Thông tin chúng tôi thu thập",
+      c1:"Danh mục", c2:"Mục", c3:"Cách thu thập",
+      r1a:"Tài khoản", r1b:"Email, tên hiển thị, URL ảnh đại diện, UID xác thực", r1c:"Tự động khi đăng nhập Google / Kakao",
+      r2a:"Hồ sơ trẻ em", r2b:"Biệt danh, PIN 4 số (băm trên thiết bị), khối lớp", r2c:"Do phụ huynh nhập",
+      r3a:"Dữ liệu học tập", r3b:"Bài tập được tạo, câu trả lời, điểm, phân tích điểm yếu, ngôn ngữ", r3c:"Tạo ra trong quá trình sử dụng",
+      r4a:"Thanh toán", r4b:"Cấp thuê bao, token mua, ID giao dịch, ngày mua/hết hạn", r4c:"Qua Google Play Billing (chúng tôi không nhận số thẻ)",
+      r5a:"Kỹ thuật", r5b:"Firebase install ID, nhật ký sự cố, định danh quảng cáo AdMob", r5c:"Tự động khi khởi chạy lần đầu / yêu cầu quảng cáo",
+      note:"Chúng tôi không thu thập các danh mục nhạy cảm (sức khỏe, sinh trắc, vị trí chính xác)."
+    },
+    s2: { h:"2. Mục đích xử lý",
+      i1:"Tạo và quản lý tài khoản phụ huynh/học sinh",
+      i2:"Tạo bài tập, chấm điểm và phân tích điểm yếu",
+      i3:"Quản lý thuê bao và xử lý thanh toán",
+      i4:"Chẩn đoán lỗi, cải thiện chất lượng và hiển thị quảng cáo không cá nhân hóa cho tài khoản phụ huynh gói miễn phí",
+      i5:"Thông báo dịch vụ và các thông báo luật định"
+    },
+    s3: { h:"3. Căn cứ pháp lý (người dùng EEA/UK)",
+      body:"Theo Điều 6 GDPR: (a) thực hiện hợp đồng; (b) sự đồng ý với tính năng tùy chọn; (c) lợi ích hợp pháp cho an toàn/cải thiện; (d) tuân thủ nghĩa vụ pháp lý."
+    },
+    s4: { h:"4. Thời hạn lưu trữ",
+      c1:"Mục", c2:"Thời hạn",
+      r1a:"Tài khoản & dữ liệu học", r1b:"Xóa trong vòng 30 ngày sau yêu cầu đóng",
+      r2a:"Bản ghi thanh toán", r2b:"Tối đa 5 năm theo luật áp dụng",
+      r3a:"Nhật ký sự cố/chẩn đoán", r3b:"Tối đa 90 ngày"
+    },
+    s5: { h:"5. Bên xử lý dữ liệu",
+      c1:"Bên xử lý", c2:"Mục đích", c3:"Khu vực",
+      r1b:"Xác thực, cơ sở dữ liệu, cloud functions, báo cáo sự cố",
+      r2b:"Mua trong ứng dụng và thuê bao",
+      r3b:"Quảng cáo không cá nhân hóa cho người dùng gói miễn phí",
+      r4a:"Kakao Corp. (chỉ Hàn Quốc)",
+      r4b:"Đăng nhập xã hội Kakao (chỉ tại Hàn Quốc)",
+      r4c:"Hàn Quốc",
+      note:"Mỗi bên xử lý hoạt động theo hợp đồng xử lý dữ liệu và chỉ cho các mục đích trên."
+    },
+    s6: { h:"6. Chuyển dữ liệu xuyên biên giới",
+      body:"Dữ liệu của bạn có thể được lưu trữ và xử lý trên máy chủ Google/Firebase ngoài quốc gia của bạn (chủ yếu tại Hoa Kỳ). Đối với người dùng EEA/UK, chúng tôi áp dụng Điều khoản hợp đồng tiêu chuẩn của EU (SCC) và khung chuyển dữ liệu Google Cloud."
+    },
+    s7: { h:"7. Quyền riêng tư của trẻ em (COPPA / GDPR-K)",
+      body:"Dịch vụ dành cho học sinh tiểu học, sử dụng dưới tài khoản phụ huynh. Chúng tôi không cố ý thu thập dữ liệu cá nhân trực tiếp từ trẻ em dưới độ tuổi đồng ý kỹ thuật số áp dụng (Hoa Kỳ 13; EEA 13–16; Hàn Quốc 14) nếu không có sự đồng ý có thể xác minh của phụ huynh.",
+      i1:"Phụ huynh tạo và quản lý hồ sơ trẻ; trẻ không trực tiếp gửi dữ liệu.",
+      i2:"Chúng tôi không phục vụ quảng cáo cá nhân hóa/hành vi cho trẻ em.",
+      i3:"Quảng cáo trên gói miễn phí là quảng cáo không cá nhân hóa và phù hợp độ tuổi (bật cài đặt trẻ em của AdMob).",
+      i4:"Phụ huynh có thể yêu cầu xem, sửa hoặc xóa dữ liệu của trẻ bất cứ lúc nào qua email liên hệ."
+    },
+    s8: { h:"8. Quyền của bạn",
+      lead:"Theo khu vực pháp lý (PIPA / GDPR / UK GDPR / LGPD / CCPA):",
+      i1:"Quyền truy cập và nhận bản sao",
+      i2:"Quyền đính chính",
+      i3:"Quyền xóa (\"quyền được lãng quên\")",
+      i4:"Quyền hạn chế và phản đối xử lý",
+      i5:"Quyền di chuyển dữ liệu",
+      i6:"Quyền rút lại sự đồng ý và khiếu nại đến cơ quan giám sát",
+      how:"Vui lòng gửi email tới alsntud1004@gmail.com để thực hiện quyền của bạn. Chúng tôi phản hồi trong vòng 30 ngày. Bạn cũng có thể xóa tài khoản trong ứng dụng hoặc qua trang Xóa tài khoản."
+    },
+    s9: { h:"9. Cư dân California (CCPA / CPRA)",
+      body:"Cư dân California có quyền biết các danh mục và mục dữ liệu cụ thể được thu thập, yêu cầu xóa, sửa và giới hạn việc sử dụng thông tin cá nhân nhạy cảm. Các danh mục được liệt kê ở Mục 1."
+    },
+    s10:{ h:"10. Chúng tôi không bán thông tin cá nhân",
+      body:"Chúng tôi không bán hoặc chia sẻ thông tin cá nhân theo định nghĩa của CCPA/CPRA, cũng không chia sẻ cho mục đích quảng cáo hành vi liên ngữ cảnh. Dữ liệu của trẻ không bao giờ bị bán hoặc chia sẻ cho mục đích quảng cáo."
+    },
+    s11:{ h:"11. An toàn",
+      body:"Chúng tôi sử dụng Firebase Authentication, quy tắc bảo mật Firestore và mã hóa TLS 1.2+ khi truyền. Truy cập hệ thống sản xuất được hạn chế và kiểm toán. Không có phương pháp nào an toàn 100%."
+    },
+    s12:{ h:"12. Thay đổi chính sách",
+      body:"Chúng tôi có thể cập nhật chính sách khi có thay đổi pháp lý hoặc thực tiễn. Thay đổi quan trọng sẽ được thông báo trong ứng dụng ít nhất 7 ngày trước khi có hiệu lực (30 ngày nếu luật yêu cầu). Ngày \"Cập nhật mới nhất\" ở đầu trang cho biết phiên bản hiện tại."
+    },
+    s13:{ h:"13. Liên hệ / Cán bộ bảo vệ dữ liệu",
+      body:"Đối với câu hỏi về quyền riêng tư hoặc thực hiện quyền của bạn, vui lòng liên hệ:"
+    }
+  }
+};
+
+function applyLang(lang){
+  const dict = I18N[lang] || I18N.en;
+  document.documentElement.lang = lang.replace('_','-');
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const path = el.getAttribute('data-i18n').split('.');
+    let v = dict;
+    for (const k of path) { v = v && v[k]; }
+    if (typeof v === 'string') el.textContent = v;
+  });
+  document.title = (I18N[lang]?.title || 'Privacy Policy') + " — My Kid's Custom Math";
+  try { localStorage.setItem('mkcm_lang', lang); } catch(_) {}
+}
+
+function detectLang(){
+  try { const s = localStorage.getItem('mkcm_lang'); if (s && I18N[s]) return s; } catch(_) {}
+  const nav = (navigator.language || 'en').toLowerCase();
+  if (nav.startsWith('ko')) return 'ko';
+  if (nav.startsWith('ja')) return 'ja';
+  if (nav.startsWith('zh')) return nav.includes('tw') || nav.includes('hk') || nav.includes('hant') ? 'zh_tw' : 'zh_cn';
+  if (nav.startsWith('es')) return 'es';
+  if (nav.startsWith('pt')) return 'pt';
+  if (nav.startsWith('fr')) return 'fr';
+  if (nav.startsWith('de')) return 'de';
+  if (nav.startsWith('ru')) return 'ru';
+  if (nav.startsWith('th')) return 'th';
+  if (nav.startsWith('id') || nav.startsWith('in')) return 'id';
+  if (nav.startsWith('vi')) return 'vi';
+  return 'en';
+}
+
+const sel = document.getElementById('langSel');
+const init = detectLang();
+sel.value = init;
+applyLang(init);
+sel.addEventListener('change', e => applyLang(e.target.value));
+</script>
+
 </body>
 </html>
